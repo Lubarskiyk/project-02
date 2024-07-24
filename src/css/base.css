@@ -1,4 +1,8 @@
 
+:root {
+
+}
+
 body {
     font-family: "Inter Tight", sans-serif;
     background-color: #fff;
@@ -38,5 +42,9 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
 
 }

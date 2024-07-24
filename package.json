@@ -11,6 +11,7 @@
   "devDependencies": {
     "glob": "^10.4.1",
     "vite": "^5.2.0",
+    "vite-imagetools": "^7.0.4",
     "vite-plugin-webfont-dl": "^3.9.4"
   },
   "author": "Konstantin Lubarskiy",
