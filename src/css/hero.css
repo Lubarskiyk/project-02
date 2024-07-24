@@ -1,0 +1,45 @@
+.background_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.headline1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding-top: 218px;
+}
+
+@media screen and (min-width: 375px) {
+    .background_image {
+        max-height: 812px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .background_image {
+        max-height: 1024px;
+        height: 100%;
+    }
+
+    .headline1 {
+        font-size: 90px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .background_image {
+        max-height: 900px;
+        height: 100%;
+    }
+
+    .headline1 {
+        padding: 300px 146px 0 146px;
+    }
+}

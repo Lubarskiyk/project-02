@@ -20,7 +20,7 @@ const heroBackground = import.meta.glob('/img/background_hero/*.png', {
 
 console.log(imageHeroBackground(heroBackground, theme.path, theme.path_retina));
 
-const image = document.querySelector('.image');
+const image = document.querySelector('.js_image');
 console.log(image);
 
 image.insertAdjacentHTML(
@@ -49,10 +49,11 @@ function imageHeroBackground(background, image_url, retina_url) {
       webpUrlRetina = images.sources['webp'].split(' ')[0];
     }
   }
-  const html = `<picture>
+  const html = `<picture >
 	    <source srcset="${avifUrl} 1x, ${avifUrlRetina} 2x" type="image/avif"/>
 	    <source srcset="${webpfUrl} 1x, ${webpUrlRetina} 2x" type="image/webp"/>
 	    <img 
+	    class="background_image "
 	      src="${imgBase}"
 	      width="${imgW}" 
 	      height="${imgH}"
