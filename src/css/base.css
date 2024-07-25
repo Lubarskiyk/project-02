@@ -1,53 +1,76 @@
 :root {
-  --background: #1c1d20;
-  --cards: #242527;
-  --arrow: #3b3b3b;
-  --main-text: #fafafa;
-  --aсcent-collor: #ed3b44;
-  --aсcent-collor-hover: #e0373f;
+    --background: #1c1d20;
+    --cards: #242527;
+    --arrow: #3b3b3b;
+    --button-text: #ed3b44;
+    --main-text: #fafafa;
+    --akcent-collor: #ed3b44;
+    --aсcent-collor-hover: #e0373f;
+    /* mb sections  */
+    --mb-small: 32px;
+    --mb-medium: 64px;
+    --mb-big: 96px;
+    --mb-huge: 194px;
+    /* gap mobile contacts */
+    --gap-mob-contacts: 4px;
+    /* gap tablet/desctop contacts/cards */
+    --gap-contacts: 8px;
+    --gap-cards: 16px;
+    /* font-weight/line-height/letter-spacing of text */
+    --font-weight: 500;
+    --line-height: 1.5;
+    --letter-spacing: -0.02em;
+    /*  transition*/
+    --trns: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  font-family: 'Inter Tight', sans-serif;
-  background-color: var(--background);
-  color: var(--main-text);
-  font-weight: 500;
+    overflow-x: hidden;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: var(--background);
+    color: var(--main-text);
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
-  padding: 0 16px;
-  margin: 0 auto;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
+    .container {
+        max-width: 375px;
+    }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
+    .container {
+        max-width: 1440px;
+    }
 }

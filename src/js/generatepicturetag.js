@@ -23,7 +23,6 @@ export function generatePictureTag(background, image_url, retina_url) {
 	    <source srcset="${avifUrl} 1x, ${avifUrlRetina} 2x" type="image/avif"/>
 	    <source srcset="${webpfUrl} 1x, ${webpUrlRetina} 2x" type="image/webp"/>
 	    <img 
-	    
 	      src="${imgBase}"
 	      width="${imgW}" 
 	      height="${imgH}"
