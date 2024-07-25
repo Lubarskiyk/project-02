@@ -1,57 +1,53 @@
-
 :root {
-    --background: #1c1d20;
-    --cards: #242527;
-    --arrow: #3b3b3b;
-    --button-text: #ed3b44;
-    --main-text: #fafafa;
-    --akcent-collor: #ED3B44
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --main-text: #fafafa;
+  --aсcent-collor: #ed3b44;
+  --aсcent-collor-hover: #e0373f;
 }
 
 body {
-    font-family: "Inter Tight", sans-serif;
-    background-color: var(--background);
-    color: var(--main-text);
+  font-family: 'Inter Tight', sans-serif;
+  background-color: var(--background);
+  color: var(--main-text);
+  font-weight: 500;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-    padding: 0 16px;
-    margin: 0 auto;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
-
 @media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
+  .container {
+    max-width: 375px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
-
-
+  .container {
+    max-width: 1440px;
+  }
 }

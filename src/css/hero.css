@@ -1,55 +1,103 @@
+.hero {
+  position: relative;
+}
+
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 812px;
+}
+
 .background_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 812px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background_image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .headline1 {
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    padding-top: 218px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  /* margin-bottom: 212px; */
+}
+
+.social_media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+.social_item {
+  height: 37px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social_link {
+  padding: 12px 10px;
+  font-size: 14px;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 375px) {
-    .background_image {
-        max-height: 812px;
-    }
+  .social_media {
+    flex-wrap: nowrap;
+  }
+  .headline1 {
+    padding-top: 281px;
+    margin-bottom: 212px;
+  }
 }
 
-
 @media screen and (min-width: 768px) {
-    .background_image {
-        max-height: 1024px;
-        height: 100%;
-    }
+  .background_image {
+    height: 1024px;
+  }
 
-    .headline1 {
-        font-size: 90px;
-    }
+  .headline1 {
+    padding-top: 300px;
+    margin-bottom: 187px;
+    font-size: 90px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .background_image {
-        max-height: 900px;
-        height: 100%;
-    }
+  .background_image {
+    height: 900px;
+  }
 
-    .headline1 {
-        padding: 300px 146px 0 146px;
-    }
+  .headline1 {
+    padding: 300px 146px 0 146px;
+    margin-bottom: 243px;
+  }
 }
 
 .inputid {
-    background: mediumorchid;
-    height: 50px;
+  background: mediumorchid;
+  height: 50px;
 }
 
 .button_color {
-    background: mediumorchid;
-    height: 50px;
+  background: mediumorchid;
+  height: 50px;
 }
