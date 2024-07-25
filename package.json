@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/project-02/",
-    "preview": "goit-js-hw-12"
+    "preview": "project-02"
   },
   "devDependencies": {
     "glob": "^10.4.1",
@@ -17,9 +17,11 @@
   "author": "Konstantin Lubarskiy",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
     "izitoast": "^1.4.0",
     "modern-normalize": "^2.0.0",
+    "swiper": "^11.1.7",
     "vite-plugin-full-reload": "^1.1.0",
     "vite-plugin-html-inject": "^1.1.1"
   }

@@ -2,11 +2,37 @@
   {
     "id": 1,
     "path": "/img/background_hero/hero_red_1x.png",
-    "path_retina": "/img/background_hero/hero_red_2x.png"
+    "path_retina": "/img/background_hero/hero_red_2x.png",
+    "accent_color": "#ED3B44"
   },
   {
     "id": 2,
+    "path": "/img/background_hero/hero_green_1x.png",
+    "path_retina": "/img/background_hero/hero_green_2x.png",
+    "accent_color": "#C6E327"
+  },
+  {
+    "id": 3,
     "path": "/img/background_hero/hero_blue_1x.png",
-    "path_retina": "/img/background_hero/hero_blue_2x.png"
+    "path_retina": "/img/background_hero/hero_blue_2x.png",
+    "accent_color": "#0041E8"
+  },
+  {
+    "id": 4,
+    "path": "/img/background_hero/hero_lightred_1x.png",
+    "path_retina": "/img/background_hero/hero_lightred_2x.png",
+    "accent_color": "#E6533C"
+  },
+  {
+    "id": 5,
+    "path": "/img/background_hero/hero_iceberg_1x.png",
+    "path_retina": "/img/background_hero/hero_iceberg_2x.png",
+    "accent_color": "#2B4441"
+  },
+  {
+    "id": 6,
+    "path": "/img/background_hero/hero_orange_1x.png",
+    "path_retina": "/img/background_hero/hero_orange_2x.png",
+    "accent_color": "#FF7F08"
   }
 ]

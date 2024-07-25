@@ -21,8 +21,8 @@ image.insertAdjacentHTML(
 const btn = document.querySelector('.button_color');
 btn.addEventListener('click', e => {
   const id = parseInt(input.value);
-  const theme3 = colorTheme.find(theme => theme.id === id);
-  console.log(theme3);
-  image.innerHTML = generatePictureTag(heroBackground, theme3.path, theme3.path_retina);
+  const theme = colorTheme.find(theme => theme.id === id);
+  console.log(theme);
+  image.innerHTML = generatePictureTag(heroBackground, theme.path, theme.path_retina);
   console.log(id);
 });
