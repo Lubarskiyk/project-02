@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "path": "/img/background_hero/hero_red_1x.png",
+    "path_retina": "/img/background_hero/hero_red_2x.png"
+  },
+  {
+    "id": 2,
+    "path": "/img/background_hero/hero_blue_1x.png",
+    "path_retina": "/img/background_hero/hero_blue_2x.png"
+  }
+]

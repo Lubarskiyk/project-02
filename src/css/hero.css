@@ -43,3 +43,13 @@
         padding: 300px 146px 0 146px;
     }
 }
+
+.inputid {
+    background: mediumorchid;
+    height: 50px;
+}
+
+.button_color {
+    background: mediumorchid;
+    height: 50px;
+}
