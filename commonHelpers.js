@@ -2,7 +2,6 @@
 	    <source srcset="${s} 1x, ${r} 2x" type="image/avif"/>
 	    <source srcset="${e} 1x, ${n} 2x" type="image/webp"/>
 	    <img 
-	    
 	      src="${i}"
 	      width="${g}" 
 	      height="${a}"
