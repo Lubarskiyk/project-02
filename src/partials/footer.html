@@ -1,30 +1,34 @@
-<footer class="footer">
+<footer id="work-together" class="footer">
   <div class="container">
-    <img src="../img/footer/logo@1x.png" alt="logo" />
-    <h2 class="footer-title">Let’s work together</h2>
+    <h2 class="footer-title">
+      <img src="./img/footer/mob-logo@1x.png" alt="logo" />Let’s
+      <span class="footer-accent-text">work</span>together
+    </h2>
 
     <form class="footer-contacts-form" name="contact-us" autocomplete="off">
       <div class="contacts-form-field">
         <input
           type="email"
           name="email-contact"
-          class="contacts-form-inp"
+          class="contacts-form-inp input"
           id="email"
           autocomplete="on"
           required
           placeholder=" "
         />
         <label for="email" class="contacts-form-label">clients@gmail.com</label>
+        <span class="valid-notify">Succes!</span>
+        <span class="invalid-notify">Invalid email, try again</span>
       </div>
 
       <div class="contacts-form-field">
         <textarea
           name="Comment"
           id="Comment"
-          class="contacts-form-inp"
+          class="contacts-form-inp contacts-form-textarea"
           placeholder="Text us"
         ></textarea>
-        <label for="Comment" class="contacts-form-label">comments</label>
+        <label for="Comment" class="contacts-form-label textarea">comments</label>
       </div>
 
       <button class="contacts-form-btn" type="submit">Send</button>
