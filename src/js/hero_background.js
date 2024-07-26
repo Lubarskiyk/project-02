@@ -16,7 +16,7 @@ const image = document.querySelector('.js_image');
 
 image.insertAdjacentHTML(
   'beforeend',
-  generatePictureTag(heroBackground, theme.path, theme.path_retina)
+  generatePictureTag(heroBackground, theme.path, theme.path_retina, 'background_image')
 );
 
 const btn = document.querySelector('.button_color');

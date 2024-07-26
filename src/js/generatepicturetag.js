@@ -1,4 +1,4 @@
-export function generatePictureTag(background, image_url, retina_url) {
+export function generatePictureTag(background, image_url, retina_url, classname) {
   let avifUrl = '';
   let webpfUrl = '';
   let avifUrlRetina = '';
@@ -19,7 +19,7 @@ export function generatePictureTag(background, image_url, retina_url) {
       webpUrlRetina = images.sources['webp'].split(' ')[0];
     }
   }
-  const htmlString = `<picture class="background_image ">
+  const htmlString = `<picture class="${classname} ">
 	    <source srcset="${avifUrl} 1x, ${avifUrlRetina} 2x" type="image/avif"/>
 	    <source srcset="${webpfUrl} 1x, ${webpUrlRetina} 2x" type="image/webp"/>
 	    <img 
