@@ -1,10 +1,10 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
-async function fetchProjects() {
-  const response = await fetch('/data/projects.json');
-  const projects = await response.json();
-  return projects;
-}
+import projects from '/data/projects.json';
+// async function fetchProjects() {
+//   const response = await fetch('/data/projects.json');
+//   const projects = await response.json();
+//   return projects;
+// }
 
 // const projectImage = import.meta.glob('./img/projects/*.png', {
 //   query: { format: 'avif;webp;png', as: 'picture' },
@@ -60,8 +60,9 @@ function createSlide(project) {
   return slide;
 }
 
-async function initializeSwiper() {
-  const projects = await fetchProjects();
+// async
+function initializeSwiper() {
+  // const projects = await fetchProjects();
   const swiperWrapper = document.getElementById('swiper-wrapper');
 
   projects.forEach(project => {
