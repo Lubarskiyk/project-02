@@ -1,1 +1,22 @@
-<section class="reviews"></section>
+<section class="reviews">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+
+    <div class="swiper swiperReviews">
+      <ul class="reviews-list swiper-wrapper"></ul>
+
+      <!-- If we need navigation buttons -->
+      <div class="reviews-swiper-arrows-container">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  <svg class="icon" width="32" height="32">
+    <use href="/img/sprite/symbol-defs.svg#icon-arrow-narrow-left"></use>
+  </svg>
+  <svg class="icon" width="32" height="32">
+    <use href="/img/sprite/symbol-defs.svg#icon-arrow-narrow-right"></use>
+  </svg>
+  <script type="module" src="../js/fetchReviews.js"></script>
+</section>
