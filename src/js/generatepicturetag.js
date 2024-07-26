@@ -1,4 +1,12 @@
-export function generatePictureTag(background, image_url, retina_url, classname) {
+/**
+ *
+ * @param objectImage объект даних зображення
+ * @param image_url шлях до зображення 1х
+ * @param retina_url шлях до зображення 2х
+ * @param classname назва класу зля стилізації зображення
+ * @returns {string} повертає розмітку на одне зображення
+ */
+export function generatePictureTag(objectImage, image_url, retina_url, classname) {
   let avifUrl = '';
   let webpfUrl = '';
   let avifUrlRetina = '';
@@ -6,7 +14,7 @@ export function generatePictureTag(background, image_url, retina_url, classname)
   let imgBase = '';
   let imgW;
   let imgH;
-  for (const [imgFile, images] of Object.entries(background)) {
+  for (const [imgFile, images] of Object.entries(objectImage)) {
     if (imgFile === image_url) {
       avifUrl = images.sources['avif'].split(' ')[0];
       webpfUrl = images.sources['webp'].split(' ')[0];
@@ -26,6 +34,7 @@ export function generatePictureTag(background, image_url, retina_url, classname)
 	      src="${imgBase}"
 	      width="${imgW}" 
 	      height="${imgH}"
+	      alt="Image"
 	  />
 	  </picture>`;
   return htmlString;
