@@ -1,6 +1,7 @@
 import colorTheme from '/data/themeColor.json';
 import { generatePictureTag } from './generatepicturetag.js';
 import { getLocalData, setLocalData } from './localdata.js';
+import { refs } from './refs.js';
 
 // const input = document.querySelector('.inputid');
 const localId = getLocalData();
