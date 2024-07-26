@@ -79,14 +79,20 @@
 
     .social_item {
         height: 55px;
+        background-color: transparent;
 
     }
 
     .social_link {
         padding: 18px 20px;
         font-size: 16px;
+        transition: background-color var(--trns);
 
     }
+}
+
+.social_link:hover {
+    background-color: var(--aсcent-collor-hover);
 }
 
 @media screen and (min-width: 1440px) {

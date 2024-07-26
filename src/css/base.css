@@ -21,7 +21,7 @@
     --line-height: 1.5;
     --letter-spacing: -0.02em;
     /*  transition*/
-    --trns: cubic-bezier(0.4, 0, 0.2, 1);
+    --trns: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
