@@ -1,0 +1,19 @@
+[{
+    "tags": ["#react", "#js", "#node js", "#git"],
+    "title": "Programming Across Borders: Ideas, Technologies, Innovations",
+    "imgSrc": "/src/img/projects/project_1_img_1x.png",
+    "link": "https://lubarskiyk.github.io/project-02/"
+  },
+{
+    "tags": ["#react", "#js", "#node js", "#git"],
+    "title": "Programming Across Borders: Ideas, Technologies, Innovations",
+    "imgSrc": "/src/img/projects/project_2_img_1x.png",
+    "link": "https://lubarskiyk.github.io/project-02/"
+  },
+  {
+    "tags": ["#react", "#js", "#node js", "#git"],
+    "title": "Programming Across Borders: Ideas, Technologies, Innovations",
+    "imgSrc": "/src/img/projects/project_3_img_1x.png",
+    "link": "https://lubarskiyk.github.io/project-02/"
+  }
+]
