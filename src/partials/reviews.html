@@ -2,21 +2,23 @@
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
 
-    <div class="swiper swiperReviews">
+    <div class="reviews-swiper">
       <ul class="reviews-list swiper-wrapper"></ul>
 
-      <!-- If we need navigation buttons -->
       <div class="reviews-swiper-arrows-container">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <button type="button" class="reviews-swiper-button reviews-swiper-button-left">
+          <svg class="reviews-icon">
+            <use href="../img/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="reviews-swiper-button reviews-swiper-button-right">
+          <svg class="reviews-icon">
+            <use href="../img/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
-  <svg class="icon" width="32" height="32">
-    <use href="/img/sprite/symbol-defs.svg#icon-arrow-narrow-left"></use>
-  </svg>
-  <svg class="icon" width="32" height="32">
-    <use href="/img/sprite/symbol-defs.svg#icon-arrow-narrow-right"></use>
-  </svg>
+
   <script type="module" src="../js/fetchReviews.js"></script>
 </section>
