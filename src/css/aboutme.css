@@ -1,3 +1,72 @@
-a {
-    color: #e0373f
+
+.accordion-container {
+    background-color: transparent;
 }
+
+.ac-header {
+
+}
+
+.ac-trigger {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--arrow);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ac-panel {
+    background-color: transparent;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 68px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    border-bottom: 1px solid var(--arrow);
+}
+
+.ac-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+}
+
+.ac.is-active .ac-panel {
+    max-height: none;
+    padding: 20px;
+
+}
+
+.svg-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 1px solid var(--arrow);
+    border-radius: 100px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon {
+    fill: var(--main-text);
+    transform: rotate(180deg);
+    transition: transform --trns;
+}
+
+.ac.is-active .icon {
+    transform: rotate(0deg);
+}
+
