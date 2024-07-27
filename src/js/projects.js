@@ -22,19 +22,20 @@ const slides = projects
       .join('');
 
     return `
-    <div class="swiper-slide proj-slide">
+    <li class="swiper-slide proj-slide">
       <div class="proj-slide-prescription">
         <ul class="proj-list-tags">${tagsList}</ul>
         <h3 class="proj-slide-title">${title}</h3>
-  <div class="proj-link-wrap"><a href="${link}" class="proj-slide-link" target="_blank">
+  <button class="proj-link-wrap" type="button">
+  <a href="${link}" class="proj-slide-link" target="_blank">
           See project
         </a>
- </div>
+ </button>
       </div>
       <div class="proj-slide-img">
         <img class="proj-img" src="${imgSrc}" alt="${title}" />
       </div>
-    </div>
+    </li>
   `;
   })
   .join('');
