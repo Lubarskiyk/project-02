@@ -27,8 +27,8 @@
 .benefits-list-item {
     border-radius: 20px;
     padding: 24px;
-    width: 344px;
-    height: 270px;
+    /*width: 344px;*/
+    /*height: 270px;*/
     background: var(--cards);
     display: flex;
     align-items: flex-start;
@@ -44,6 +44,7 @@
     background: var(--akcent-collor);
     align-items: center;
     justify-content: center;
+    margin-bottom: 64px;
 }
 
 .benefits-icon {
@@ -84,7 +85,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
     .benefits-list {
         flex-direction: row;
         flex-wrap: wrap;
