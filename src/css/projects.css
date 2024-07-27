@@ -61,7 +61,12 @@
   margin-bottom: var(--mb-medium);
   background: #242527;
 }
-
+.proj-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* ===============btns========================== */
 
 .proj-btn-wrap {

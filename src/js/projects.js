@@ -32,7 +32,7 @@ const slides = projects
  </div>
       </div>
       <div class="proj-slide-img">
-        <img src="${imgSrc}" alt="${title}" />
+        <img class="proj-img" src="${imgSrc}" alt="${title}" />
       </div>
     </div>
   `;
