@@ -12,13 +12,15 @@ const heroBackground = import.meta.glob('/img/background_hero/*.png', {
   eager: true,
 });
 
-refs.heroBackground.insertAdjacentHTML(
-  'beforeend',
-  generatePictureTag(
-    heroBackground,
-    theme.path,
-    theme.path_retina,
-    'background_image',
-    'background'
-  )
-);
+export function renderHero() {
+  refs.heroBackground.insertAdjacentHTML(
+    'beforeend',
+    generatePictureTag(
+      heroBackground,
+      theme.path,
+      theme.path_retina,
+      'background_image',
+      'background'
+    )
+  );
+}
