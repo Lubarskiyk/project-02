@@ -1,6 +1,21 @@
+.aboutme {
+
+}
+
+.container {
+
+}
 
 .accordion-container {
     background-color: transparent;
+    margin-top: 64px;
+    /* max-width: 375px; */
+}
+.ac {
+border-bottom: 1px solid var(--arrow);
+}
+.ac:not(:first-child) {
+    margin-top: 20px;
 }
 
 .ac-header {
@@ -27,11 +42,18 @@
     background-color: transparent;
     margin-top: 8px;
     margin-left: auto;
-    margin-right: 68px;
+    /* margin-right: 68px; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
-    border-bottom: 1px solid var(--arrow);
+    
+    padding: 0;
+
+
+    max-width: 612px;
+    display: block;
+    margin-bottom: 20px;
+
 }
 
 .ac-text {
@@ -42,10 +64,12 @@
     color: var(--main-text);
 }
 
+.ac-text-1 {
+    margin-bottom: 32px;
+}
+
 .ac.is-active .ac-panel {
     max-height: none;
-    padding: 20px;
-
 }
 
 .svg-wrap {
@@ -70,3 +94,18 @@
     transform: rotate(0deg);
 }
 
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
