@@ -42,6 +42,7 @@ const slides = projects
 slideWrap.innerHTML = slides;
 
 const swiper = new Swiper('.swiper-container', {
+  speed: 300,
   slidesPerView: 1,
   modules: [Navigation, Keyboard],
   navigation: {

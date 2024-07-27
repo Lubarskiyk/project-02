@@ -48,6 +48,7 @@
   padding: 13px 32px;
   display: inline-block;
   cursor: pointer;
+  transition: background-color var(--trns);
 }
 .proj-link-wrap:hover {
   background-color: var(--aсcent-collor-hover);
