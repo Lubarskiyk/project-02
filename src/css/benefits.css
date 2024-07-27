@@ -1,5 +1,5 @@
 .benefits {
-    padding-bottom: var(--pb-medium);
+    padding-top: var(--pb-medium);
 }
 
 .benefits-container {
@@ -83,11 +83,17 @@
     color: var(--main-text);
     margin-bottom: var(--mb-medium);
     cursor: pointer;
+    transition: border-color var(--trns);
+}
+
+.benefits-button:hover,
+.benefits-button:active {
+    border-color: var(--main-text);
 }
 
 @media screen and (min-width: 768px) {
     .benefits {
-        padding-bottom: var(--pb-big);
+        padding-top: var(--pb-big);
     }
 
     .benefits-list {
@@ -103,7 +109,7 @@
 
 @media screen and (min-width: 1440px) {
     .benefits {
-        padding-bottom: var(--pb-huge);
+        padding-top: var(--pb-huge);
     }
 
     .benefits-container {
