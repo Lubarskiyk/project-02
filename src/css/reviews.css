@@ -21,9 +21,6 @@
 
 .reviews-list {
     margin-bottom: 32px;
-
-    display: flex;
-    align-items: stretch;
 }
 
 .reviews-wrap.swiper-slide {
