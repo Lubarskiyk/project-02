@@ -32,7 +32,7 @@ const slides = projects
  </div>
       </div>
       <div class="proj-slide-img">
-        <img src="${imgSrc}" alt="${title}" />
+        <img class="proj-img" src="${imgSrc}" alt="${title}" />
       </div>
     </div>
   `;
@@ -41,7 +41,6 @@ const slides = projects
 slideWrap.innerHTML = slides;
 
 const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
   modules: [Navigation, Keyboard],
   navigation: {
     nextEl: '.proj-btn-next',
@@ -55,5 +54,19 @@ const swiper = new Swiper('.swiper-container', {
   lazy: {
     loadPrevNext: true,
     loadOnTransitionStart: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      // spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 1,
+      // spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 1,
+      // spaceBetween: 16,
+    },
   },
 });
