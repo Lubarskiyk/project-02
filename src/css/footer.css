@@ -135,26 +135,61 @@ textarea {
   letter-spacing: var(--letter-spacing);
   color: var(--form-color);
 
-  transition: transform var(--trns);
+  transition: transform 470ms var(--cubic);
+}
+
+.contacts-form-label.textarea {
+  transition: transform 540ms var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-form-label {
+    transition: transform 400ms var(--cubic);
+  }
+  .contacts-form-label.textarea {
+    transition: transform 470ms var(--cubic);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-form-label {
+    transition: transform 500ms var(--cubic);
+  }
+  .contacts-form-label.textarea {
+    transition: transform 600ms var(--cubic);
+  }
 }
 
 .contacts-form-textarea::placeholder {
   opacity: 0;
-  transition: opacity var(--trns);
+  transition: opacity 350ms var(--cubic);
 }
 .contacts-form-textarea:focus::placeholder {
   opacity: 1;
+  transition: opacity 300ms 270ms var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-form-textarea:focus::placeholder {
+    transition: opacity 350ms 170ms var(--cubic);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-form-textarea:focus::placeholder {
+    transition: opacity 380ms 280ms var(--cubic);
+  }
 }
 
 .contacts-form-inp:focus + .contacts-form-label,
 .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label {
   transform: translate(225px, -29px) scale(0.8);
-  color: var(--form-color);
+  color: rgba(250, 250, 250, 0.3);
 }
 .contacts-form-inp:focus + .contacts-form-label.textarea,
 .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label.textarea {
   transform: translate(274px, -29px) scale(0.8);
-  color: var(--form-color);
+  color: rgba(250, 250, 250, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -199,7 +234,7 @@ textarea {
   left: 0;
   color: var(--success-color);
 
-  transition: opacity var(--trns);
+  transition: opacity 350ms var(--cubic);
 }
 
 .invalid-notify {
@@ -214,6 +249,7 @@ textarea {
   + .valid-notify
   + .invalid-notify {
   opacity: 1;
+  transition: opacity 350ms 200ms var(--cubic);
 }
 
 .contacts-form-btn {
@@ -262,6 +298,8 @@ textarea {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   color: var(--main-text);
+
+  transition: border-color 350ms var(--cubic);
 }
 
 @media screen and (min-width: 768px) {
