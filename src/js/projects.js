@@ -3,15 +3,15 @@ import { Navigation, Keyboard } from 'swiper/modules';
 import { generatePictureTag } from './generatepicturetag.js';
 import projects from '/data/projects.json';
 
-// const projectImage = import.meta.glob('./img/projects/*.png', {
-//   query: { format: 'avif;webp;png', as: 'picture' },
-//   import: 'default',
-//   eager: true,
-// });
+const projectImage = import.meta.glob('./img/projects/*.png', {
+  query: { format: 'avif;webp;png', as: 'picture' },
+  import: 'default',
+  eager: true,
+});
 
 const slideWrap = document.querySelector('.swiper-wrapper');
 const slides = projects
-  .map(({ title, imgSrc, link, tags }) => {
+  .map(({ title, imgSrc, imgRetinaSrc, link, tags }) => {
     const tagsList = tags
       .map(
         tag =>
@@ -33,7 +33,7 @@ const slides = projects
  </button>
       </div>
       <div class="proj-slide-img">
-        <img class="proj-img" src="${imgSrc}" alt="${title}" />
+        ${generatePictureTag(projectImage, imgSrc, imgRetinaSrc, 'proj-img', `${title}`)}
       </div>
     </li>
   `;
