@@ -6,7 +6,7 @@
  * @param classname назва класу зля стилізації зображення
  * @returns {string} повертає розмітку на одне зображення
  */
-export function generatePictureTag(objectImage, image_url, retina_url, classname) {
+export function generatePictureTag(objectImage, image_url, retina_url, classname, alt) {
   let avifUrl = '';
   let webpfUrl = '';
   let avifUrlRetina = '';
@@ -34,7 +34,7 @@ export function generatePictureTag(objectImage, image_url, retina_url, classname
 	      src="${imgBase}"
 	      width="${imgW}" 
 	      height="${imgH}"
-	      alt="Image"
+	      alt="${alt}"
 	  />
 	  </picture>`;
   return htmlString;

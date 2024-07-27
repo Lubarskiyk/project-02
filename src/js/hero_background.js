@@ -14,5 +14,11 @@ const heroBackground = import.meta.glob('/img/background_hero/*.png', {
 
 refs.heroBackground.insertAdjacentHTML(
   'beforeend',
-  generatePictureTag(heroBackground, theme.path, theme.path_retina, 'background_image')
+  generatePictureTag(
+    heroBackground,
+    theme.path,
+    theme.path_retina,
+    'background_image',
+    'background'
+  )
 );
