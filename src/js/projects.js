@@ -1,4 +1,6 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
+import { generatePictureTag } from './generatepicturetag.js';
 import projects from '/data/projects.json';
 
 // const projectImage = import.meta.glob('./img/projects/*.png', {
@@ -39,8 +41,19 @@ const slides = projects
 slideWrap.innerHTML = slides;
 
 const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  modules: [Navigation, Keyboard],
   navigation: {
     nextEl: '.proj-btn-next',
     prevEl: '.proj-btn-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  lazy: {
+    loadPrevNext: true,
+    loadOnTransitionStart: true,
   },
 });
