@@ -38,13 +38,21 @@ textarea {
   .footer-title {
     max-width: 542px;
     margin-bottom: 64px;
+    gap: 7px 20px;
 
     font-size: 64px;
   }
 }
 
 .footer-accent-text {
+  margin-left: 2px;
   color: var(--akcent-collor);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-accent-text {
+    margin-left: -6px;
+  }
 }
 
 .footer-contacts-form {
