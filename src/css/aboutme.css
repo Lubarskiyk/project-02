@@ -9,7 +9,6 @@
 .accordion-container {
     background-color: transparent;
     margin-top: 64px;
-    /* max-width: 375px; */
 }
 .ac {
 border-bottom: 1px solid var(--arrow);
@@ -41,8 +40,6 @@ border-bottom: 1px solid var(--arrow);
 .ac-panel {
     background-color: transparent;
     margin-top: 8px;
-    margin-left: auto;
-    /* margin-right: 68px; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
@@ -102,10 +99,18 @@ border-bottom: 1px solid var(--arrow);
         padding-left: 32px;
         padding-right: 32px;
     }
+        .ac:not(:first-child) {
+            margin-top: 32px;
+        }
 }
 
 @media screen and (min-width: 1440px) {
     .container {
         max-width: 1440px;
     }
+
+        .ac-panel {
+            margin-left: auto;
+            margin-right: 68px;
+        }
 }
