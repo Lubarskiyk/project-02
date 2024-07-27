@@ -1,6 +1,6 @@
 .header {
     position: absolute;
-    padding-top: 32px;
+    padding-top: var(--pb-small);
     width: 100%;
     background-color: transparent;
     z-index: 50;
@@ -20,8 +20,8 @@
 
 .image-wrapper{
 display: flex;
-    flex-direction: row;
-    column-gap: 8px;
+flex-direction: row;
+column-gap: 8px;
 }
 
 .logo-text{
@@ -29,12 +29,22 @@ display: flex;
 
 }
 
+.navigation-header{
+    font-family: "Inter Tight", sans-serif;
+        font-weight: var(--font-weight);
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #fafafa;
+}
+
 .navigation-header {
     display: none;
 }
 
 .burger-icon{
-width: 28px;
+    width: 28px;
     height: 28px;
     fill: transparent;
     stroke-width: 2px;
@@ -46,6 +56,7 @@ width: 28px;
     align-items: flex-start;
 }
 
+
 /* MODAL WINDOW */
 
 .modal-overlay{
@@ -56,26 +67,15 @@ width: 28px;
     left: 0;
     width: 100%;
     height: 100%;
-     background-color: rgba(0, 0, 0, 0.5); 
-    
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 999;
      display: flex;
-    /* justify-content: center;
-    align-items: center;      */
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms ease-in-out;
 }
 
 .modal {
-    /* background-color: transparent;
-    width: 100%;
-    max-width: 375px;
-    max-height: 812px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
      background-color: transparent;
         width: 100%;
         max-width: 375px; 
@@ -105,22 +105,17 @@ width: 28px;
 }
 
 .nav-list{
-display: flex;
+    display: flex;
     flex-direction: column;
     gap: 8px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 289px;
 }
-.nav-item{
-
-}
-
 
 /* редактировать шрифт */
 .modal-text{
     font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
+    font-weight: var(--font-weight);
     font-size: 16px;
     letter-spacing: -0.02em;
     text-decoration: underline;
@@ -129,21 +124,7 @@ display: flex;
 }
 
 /* редактировать шрифт */
-.order-btn{
-    border-radius: 60px;
-    background: #ed3b44;
-    border: none;
-        padding: 14px 31px;
-        width: 164px;
-        height: 45px;
-        font-family: "Inter Tight", sans-serif;
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: -0.02em;
-            color: #fafafa;
-            margin-bottom: 64px;
-    
-}
+
 
 .close-btn{
     border: none;
@@ -162,9 +143,52 @@ display: flex;
     stroke: var(--main-text);
 }
 
+.order-btn {
+    display: none;
+}
+
+.change-theme{
+    position: absolute;
+        top: 32px;
+        right: 100px;
+        width: 28px;
+        height: 28px;
+        fill: transparent;
+        stroke-width: 2px;
+        stroke: var(--main-text);
+}
+
+.order-mobile{
+    display: block;
+        border-radius: 60px;
+        background: var(--akcent-collor);
+        border: none;
+        padding: 14px 31px;
+        width: 164px;
+        height: 45px;
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        position: absolute;
+        bottom: 64px;
+}
+
 @media screen and (min-width: 768px){
 .logo-wrapper{
 flex-grow: 0;
+}
+
+.change-theme {
+    position: absolute;
+    top: 32px;
+    right: 250px;
+    width: 28px;
+    height: 28px;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: var(--main-text);
 }
 
 .navigation-header{
@@ -174,5 +198,26 @@ flex-grow: 0;
 .burger-icon{
     display: none;
 }
+
+.order-btn{
+display: block;
+ border-radius: 60px;
+    background: #ed3b44;
+    border: none;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa; 
+}
       
+}
+
+@media screen and (min-width: 1440px){
+    .change-theme{
+    right: 300px;
+}
 }
