@@ -4,9 +4,6 @@ import { renderReviewsError, renderReviewsSuccess } from './renderReviews';
 import { onError } from './notifications';
 import Swiper from 'swiper';
 import { Keyboard, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/keyboard';
 
 const swiperReviews = new Swiper('.reviews-swiper', {
   modules: [Navigation, Keyboard],
