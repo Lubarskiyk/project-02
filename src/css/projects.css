@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
 }
+.swiper-container {
+  overflow: hidden;
+}
 
 /* =================prescription====================== */
 .proj-title {
@@ -25,7 +28,6 @@
   margin-bottom: 96px;
 }
 .proj-tags-item {
-  display: flex;
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
