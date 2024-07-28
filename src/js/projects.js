@@ -3,7 +3,7 @@ import { Navigation, Keyboard } from 'swiper/modules';
 import { generatePictureTag } from './generatepicturetag.js';
 import projects from '/data/projects.json';
 
-const projectImage = import.meta.glob('./img/projects/*.png', {
+const projectImage = import.meta.glob('/img/projects/*.png', {
   query: { format: 'avif;webp;png', as: 'picture' },
   import: 'default',
   eager: true,
