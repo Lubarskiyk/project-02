@@ -286,9 +286,6 @@ textarea {
   background-color: var(--aсcent-collor-hover);
 }
 
-/* .footer-contacts-item {
-} */
-
 .footer-contacts-link {
   display: block;
   padding: 10px 12px;
@@ -313,6 +310,8 @@ textarea {
 .footer-contacts-link:focus {
   border-color: var(--main-text);
 }
+
+/** iziToast - style */
 
 .iziToast-wrapper > .iziToast-capsule > .iziToast {
   position: relative;

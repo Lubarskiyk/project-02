@@ -1,5 +1,5 @@
 import { makePost } from './swagger-api';
-import { addInlineIziToastStyle, iziToastStyle } from './footer.iziToast.styles';
+import { addInlineIziToastStyle, iziToastStyle } from './footer.backdrop.styles';
 
 export function handlerPost(evt) {
   evt.preventDefault();
