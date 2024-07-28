@@ -3,36 +3,42 @@
     "id": 1,
     "path": "/img/background_hero/hero_red_1x.png",
     "path_retina": "/img/background_hero/hero_red_2x.png",
-    "accent_color": "#ED3B44"
+    "accent_color": "#ED3B44",
+    "aсcent_collor_hover": "#e0373f"
   },
   {
     "id": 2,
     "path": "/img/background_hero/hero_green_1x.png",
     "path_retina": "/img/background_hero/hero_green_2x.png",
-    "accent_color": "#C6E327"
+    "accent_color": "#C6E327",
+    "aсcent_collor_hover": "#d0e84a"
   },
   {
     "id": 3,
     "path": "/img/background_hero/hero_blue_1x.png",
     "path_retina": "/img/background_hero/hero_blue_2x.png",
-    "accent_color": "#0041E8"
+    "accent_color": "#0041E8",
+    "aсcent_collor_hover": "#4d7fff"
   },
   {
     "id": 4,
     "path": "/img/background_hero/hero_lightred_1x.png",
     "path_retina": "/img/background_hero/hero_lightred_2x.png",
-    "accent_color": "#E6533C"
+    "accent_color": "#E6533C",
+    "aсcent_collor_hover": "#ed8778"
   },
   {
     "id": 5,
     "path": "/img/background_hero/hero_iceberg_1x.png",
     "path_retina": "/img/background_hero/hero_iceberg_2x.png",
-    "accent_color": "#2B4441"
+    "accent_color": "#2B4441",
+    "aсcent_collor_hover": "#588d87"
   },
   {
     "id": 6,
     "path": "/img/background_hero/hero_orange_1x.png",
     "path_retina": "/img/background_hero/hero_orange_2x.png",
-    "accent_color": "#FF7F08"
+    "accent_color": "#FF7F08",
+    "aсcent_collor_hover": "#ffa34d"
   }
 ]
