@@ -5,28 +5,29 @@
       <span class="footer-accent-text">work</span>together
     </h2>
 
-    <form class="footer-contacts-form" name="contact-us" autocomplete="off">
+    <form class="js-footer-form footer-contacts-form" name="contact-us" autocomplete="off">
       <div class="contacts-form-field">
         <input
           type="email"
-          name="email-contact"
+          name="emailContact"
           class="contacts-form-inp input"
           id="email"
           autocomplete="on"
           required
           placeholder=" "
-        />
-        <label for="email" class="contacts-form-label">clients@gmail.com</label>
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        /><label for="email" class="contacts-form-label"> clients@gmail.com</label>
         <span class="valid-notify">Succes!</span>
         <span class="invalid-notify">Invalid email, try again</span>
       </div>
 
       <div class="contacts-form-field">
         <textarea
-          name="Comment"
+          name="comment"
           id="Comment"
           class="contacts-form-inp contacts-form-textarea"
           placeholder="Text us"
+          required
         ></textarea>
         <label for="Comment" class="contacts-form-label textarea">comments</label>
       </div>
@@ -46,3 +47,4 @@
     </ul>
   </div>
 </footer>
+<script type="module" src="./js/footer.js"></script>
