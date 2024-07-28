@@ -59,7 +59,7 @@ const observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         getReviews();
-        initSwiper();
+        // initSwiper();
 
         observer.disconnect();
       }
