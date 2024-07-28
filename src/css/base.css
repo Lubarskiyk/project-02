@@ -34,10 +34,11 @@
 }
 
 body {
-  overflow-x: hidden;
-  font-family: 'Inter Tight', sans-serif;
-  background-color: var(--background);
-  color: var(--main-text);
+    overflow-x: hidden;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: var(--background);
+    color: var(--main-text);
+
 }
 
 .visually-hidden {

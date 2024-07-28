@@ -11,7 +11,15 @@ const developerFoto = import.meta.glob('/img/aboutme_up/*.png', {
   eager: true,
 });
 
-refs.developerFoto.insertAdjacentHTML(
-  'beforeend',
-  generatePictureTag(developerFoto, foto.path, foto.path_retina, 'developer-card-photo')
-);
+export function renderPhotoAboutme() {
+  refs.developerFoto.insertAdjacentHTML(
+    'beforeend',
+    generatePictureTag(
+      developerFoto,
+      foto.path,
+      foto.path_retina,
+      'developer-card-photo',
+      'Foto Developer'
+    )
+  );
+}
