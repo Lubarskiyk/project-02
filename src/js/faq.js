@@ -1,4 +1,7 @@
 import Accordion from 'accordion-js';
+
+// import 'accordion-js/dist/accordion.min.css';
+
 import faqData from '/data/faq.json';
 
 const refs = {
