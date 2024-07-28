@@ -1,25 +1,24 @@
+/* ACCORDION */
 .aboutme {
-
+    padding-bottom: 64px;
 }
 
-.container {
-
-}
+.container {}
 
 .accordion-container {
     background-color: transparent;
     margin-top: 64px;
 }
+
 .ac {
-border-bottom: 1px solid var(--arrow);
+    border-bottom: 1px solid var(--arrow);
 }
+
 .ac:not(:first-child) {
     margin-top: 20px;
 }
 
-.ac-header {
-
-}
+.ac-header {}
 
 .ac-trigger {
     font-weight: 600;
@@ -36,21 +35,16 @@ border-bottom: 1px solid var(--arrow);
     align-items: center;
 }
 
-
 .ac-panel {
     background-color: transparent;
     margin-top: 8px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    
+    transition: max-height var(--trns), padding var(--trns);
     padding: 0;
-
-
     max-width: 612px;
     display: block;
     margin-bottom: 20px;
-
 }
 
 .ac-text {
@@ -59,6 +53,12 @@ border-bottom: 1px solid var(--arrow);
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: var(--main-text);
+    transition: opacity var(--trns);
+    opacity: 0;
+}
+
+.ac.is-active .ac-text {
+    opacity: 1;
 }
 
 .ac-text-1 {
@@ -72,45 +72,175 @@ border-bottom: 1px solid var(--arrow);
 .svg-wrap {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     border: 1px solid var(--arrow);
     border-radius: 100px;
-    padding: 10px;
+    padding: 9px;
     width: 40px;
     height: 40px;
 }
 
 .icon {
+    display: inline-block;
+    align-items: center;
     fill: var(--main-text);
     transform: rotate(180deg);
-    transition: transform --trns;
+    transition: transform var(--trns);
 }
 
 .ac.is-active .icon {
     transform: rotate(0deg);
 }
 
-
-
 @media screen and (min-width: 768px) {
+    .aboutme {
+        padding-bottom: 96px;
+    }
+
     .container {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
     }
-        .ac:not(:first-child) {
-            margin-top: 32px;
-        }
+
+    .ac:not(:first-child) {
+        margin-top: 32px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .aboutme {
+        padding-bottom: 164px;
+    }
+
     .container {
         max-width: 1440px;
     }
 
-        .ac-panel {
-            margin-left: auto;
-            margin-right: 68px;
-        }
+    .ac-panel {
+        margin-left: auto;
+        margin-right: 68px;
+    }
+}
+
+/* SWIPER */
+.about-container-swiper {
+    margin-top: 32px;
+    display: flex;
+}
+
+.about-me-swiper {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin: 0;
+    overflow: hidden;
+    transition: transform var(--trns);
+}
+
+.aboutme-skills-list.swiper-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutme-skills-item.swiper-slide {
+    width: 130px;
+    height: 130px;
+    border: 1px solid var(--arrow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.aboutme-skills-item.swiper-slide-active {
+    background-color: var(--akcent-collor);
+}
+
+.aboutme-skills-text {
+    font-weight: var(--font-weight);
+    font-size: 16px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.swiper-button-wrap {
+    width: 28px;
+    margin-left: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.aboutme-swiper-btn {
+    display: block;
+    width: 28px;
+    height: 28px;
+    fill: var(--arrow);
+    border: none;
+    transition: transform var(--trns);
+}
+
+.aboutme-swiper-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container-swiper {
+        margin-top: 64px;
+    }
+
+    .about-me-swiper {
+        height: 200px;
+        width: 600px;
+    }
+
+    .aboutme-skills-item.swiper-slide {
+        height: 200px;
+    }
+
+    .aboutme-skills {
+        padding-bottom: var(--mb-big);
+    }
+
+    .aboutme-skills-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutme-skills-text {
+        font-size: 20px;
+    }
+
+    .swiper-button-wrap {
+        width: 40px;
+        margin-left: 64px;
+    }
+
+    .aboutme-swiper-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-container-swiper {
+        margin-top: 96px;
+    }
+
+    .about-me-swiper {
+        width: 1232px;
+        padding-left: 32px;
+    }
+
+    .aboutme-skills {
+        padding-bottom: var(--mb-huge);
+    }
+
+    .swiper-button-wrap {
+        margin-left: 72px;
+    }
 }
