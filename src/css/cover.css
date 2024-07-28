@@ -1,3 +1,130 @@
-a {
-    color: red
+.cover-img {
+    width: 252px;
+    height: 163px;
+    max-width: none;
+}
+
+@media (min-width: 768px) {
+    .cover-img {
+        width: 544px;
+        height: 314px;
+        max-width: none;
+    }
+}
+
+
+.line {
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    animation-name: Line;
+    animation-duration: 17s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Line {
+    from {
+        transform: translateX(80%);
+
+    }
+
+    to {
+        transform: translateX(-80%);
+    }
+}
+
+.cover-container {
+
+    height: 508px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    backdrop-filter: blur(30px);
+    background: rgba(217, 217, 217, 0.04);
+}
+
+@media (min-width: 768px) {
+    .cover-container {
+        height: 960px;
+        margin-top: 164px;
+        margin-bottom: 164px;
+    }
+}
+
+.wrap {
+    position: absolute;
+    transform: rotate(16deg);
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .wrap {
+        margin-bottom: 0px;
+    }
+}
+
+.line-one {
+    margin-bottom: 50px;
+    position: relative;
+    left: 75%;
+}
+
+.line-two {
+    margin-bottom: 25px;
+    gap: 30px;
+    position: relative;
+    left: 15%;
+}
+
+@media (min-width: 768px) {
+    .line-two {
+        gap: 60px;
+        margin-bottom: 50px;
+    }
+}
+
+
+.line-three {
+    margin-bottom: 25px;
+    gap: 25px;
+    position: relative;
+    left: 2%;
+}
+
+@media (min-width: 768px) {
+    .line-three {
+        gap: 45px;
+        margin-bottom: 40px;
+    }
+}
+
+.line-four {
+    margin-bottom: 25px;
+    gap: 30px;
+    position: relative;
+    left: 15%;
+}
+
+@media (min-width: 768px) {
+    .line-four {
+        gap: 65px;
+        margin-bottom: 60px;
+    }
+}
+
+.line-five {
+    position: relative;
+    left: 13%;
+}
+
+.background-svg {
+    z-index: -1;
+    position: absolute;
+    width: 1440px;
+    height: 960px;
 }

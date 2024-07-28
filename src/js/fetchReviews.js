@@ -55,14 +55,14 @@ function initSwiper() {
   });
 }
 const swiperSection = document.querySelector('.reviews');
-const observer = new IntersectionObserver(
+const reviewsObserver = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         getReviews();
-        // initSwiper();
+        initSwiper();
 
-        observer.disconnect();
+        reviewsObserver.disconnect();
       }
     });
   },
@@ -73,7 +73,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-observer.observe(swiperSection);
+reviewsObserver.observe(swiperSection);
 
 async function fetchReviews() {
   return (await axios.get(`${BASE_URL}/reviews`)).data;

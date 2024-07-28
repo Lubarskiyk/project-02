@@ -9,7 +9,7 @@ const projectImage = import.meta.glob('/img/projects/*.png', {
   eager: true,
 });
 
-const slideWrap = document.querySelector('.swiper-wrapper');
+const projSlideWrap = document.querySelector('.proj-swiper-wrap');
 const slides = projects
   .map(({ title, imgSrc, imgRetinaSrc, link, tags }) => {
     const tagsList = tags
@@ -39,7 +39,7 @@ const slides = projects
   `;
   })
   .join('');
-slideWrap.innerHTML = slides;
+projSlideWrap.innerHTML = slides;
 
 const swiper = new Swiper('.swiper-container', {
   speed: 300,
