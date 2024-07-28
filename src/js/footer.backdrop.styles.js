@@ -1,8 +1,11 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import caution from '../img/footer/bi_exclamation-triangle.png';
+
 function iziToastStyle() {
   return iziToast.info({
+    class: 'infoNotify',
     position: 'center',
     title: 'Thank you for your interest in cooperation!',
     titleSize: ' 20px',
@@ -27,7 +30,7 @@ function iziToastStyle() {
 }
 
 function addInlineIziToastStyle() {
-  const strong = document.querySelector('.iziToast-title ');
+  const strong = document.querySelector('.infoNotify .iziToast-title');
   strong.style.textAlign = 'center';
   strong.style.marginRight = 0;
   strong.style.fontFamily = 'Inter Tight';
@@ -35,4 +38,22 @@ function addInlineIziToastStyle() {
   strong.style.letterSpacing = '-0.02em';
 }
 
-export { iziToastStyle, addInlineIziToastStyle };
+function emptyComment() {
+  iziToast.warning({
+    class: 'emptyNotify',
+    position: 'topRight',
+    maxWidth: '340px',
+    title: 'Comments can not be empty',
+    titleSize: '16px',
+    titleColor: 'white',
+    message: 'you must fill the comments section',
+    messageColor: 'white',
+    backgroundColor: '#09f',
+    iconUrl: caution,
+    layout: 1,
+    progressBarColor: ' #3958c9',
+    closeOnEscape: true,
+  });
+}
+
+export { iziToastStyle, addInlineIziToastStyle, emptyComment };

@@ -1,5 +1,5 @@
 import { makePost } from './swagger-api';
-import { addInlineIziToastStyle, iziToastStyle } from './footer.backdrop.styles';
+import { addInlineIziToastStyle, emptyComment, iziToastStyle } from './footer.backdrop.styles';
 
 export function handlerPost(evt) {
   evt.preventDefault();
@@ -9,9 +9,7 @@ export function handlerPost(evt) {
   const commentValue = comment.value.trim();
 
   if (!commentValue) {
-    //////////////////////todo iziToast
-
-    alert('it is can not be empty');
+    emptyComment();
     return;
   }
 
