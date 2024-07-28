@@ -5,4 +5,5 @@ export const refs = {
   rootColor: document.documentElement,
   openmenu: document.querySelector('.js_menu_changecolor'),
   changecolor: document.querySelector('.change-theme'),
+  form: document.querySelector('.js-footer-form'),
 };
