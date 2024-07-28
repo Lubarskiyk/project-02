@@ -27,7 +27,7 @@ refs.openmenu.addEventListener('click', e => {
     'background_image'
   );
   refs.rootColor.style.setProperty('--akcent-collor', `${theme.accent_color}`);
-  //   setLocalData(id);
+  setLocalData(id);
 });
 
 export function changerColor(accent_color, accent_color_hover) {
