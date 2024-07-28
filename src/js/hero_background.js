@@ -7,7 +7,7 @@ import { changerColor } from './changecolor.js';
 const localId = getLocalData();
 const theme = colorTheme.find(theme => theme.id === localId);
 
-const heroBackground = import.meta.glob('/img/background_hero/*.png', {
+export const heroBackground = import.meta.glob('/img/background_hero/*.png', {
   query: { format: 'avif;webp;png', as: 'picture' },
   import: 'default',
   eager: true,
