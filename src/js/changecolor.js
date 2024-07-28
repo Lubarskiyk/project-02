@@ -6,8 +6,6 @@ import { setLocalData } from './localdata.js';
 
 refs.changecolor.addEventListener('click', () => {
   refs.openmenu.classList.toggle('isopen_changecolor');
-
-  console.log(refs.openmenu);
 });
 const li_item = document.querySelectorAll('.theme_button');
 li_item.forEach((e, key) => {
