@@ -30,14 +30,15 @@
   --letter-spacing: -0.02em;
   /*  transition*/
   --trns: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  --cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+   --cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
 }
 
 body {
-    overflow-x: hidden;
-    font-family: 'Inter Tight', sans-serif;
-    background-color: var(--background);
-    color: var(--main-text);
+  overflow-x: hidden;
+  font-family: 'Inter Tight', sans-serif;
+  background-color: var(--background);
+  color: var(--main-text);
 
 }
 
