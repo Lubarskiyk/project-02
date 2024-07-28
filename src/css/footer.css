@@ -38,13 +38,21 @@ textarea {
   .footer-title {
     max-width: 542px;
     margin-bottom: 64px;
+    gap: 7px 20px;
 
     font-size: 64px;
   }
 }
 
 .footer-accent-text {
+  margin-left: 2px;
   color: var(--akcent-collor);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-accent-text {
+    margin-left: -6px;
+  }
 }
 
 .footer-contacts-form {
@@ -127,26 +135,61 @@ textarea {
   letter-spacing: var(--letter-spacing);
   color: var(--form-color);
 
-  transition: transform var(--trns);
+  transition: transform 470ms var(--cubic);
+}
+
+.contacts-form-label.textarea {
+  transition: transform 540ms var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-form-label {
+    transition: transform 400ms var(--cubic);
+  }
+  .contacts-form-label.textarea {
+    transition: transform 470ms var(--cubic);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-form-label {
+    transition: transform 500ms var(--cubic);
+  }
+  .contacts-form-label.textarea {
+    transition: transform 600ms var(--cubic);
+  }
 }
 
 .contacts-form-textarea::placeholder {
   opacity: 0;
-  transition: opacity var(--trns);
+  transition: opacity 350ms var(--cubic);
 }
 .contacts-form-textarea:focus::placeholder {
   opacity: 1;
+  transition: opacity 300ms 270ms var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-form-textarea:focus::placeholder {
+    transition: opacity 350ms 170ms var(--cubic);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-form-textarea:focus::placeholder {
+    transition: opacity 380ms 280ms var(--cubic);
+  }
 }
 
 .contacts-form-inp:focus + .contacts-form-label,
 .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label {
   transform: translate(225px, -29px) scale(0.8);
-  color: var(--form-color);
+  color: rgba(250, 250, 250, 0.3);
 }
 .contacts-form-inp:focus + .contacts-form-label.textarea,
 .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label.textarea {
   transform: translate(274px, -29px) scale(0.8);
-  color: var(--form-color);
+  color: rgba(250, 250, 250, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -191,7 +234,7 @@ textarea {
   left: 0;
   color: var(--success-color);
 
-  transition: opacity var(--trns);
+  transition: opacity 350ms var(--cubic);
 }
 
 .invalid-notify {
@@ -206,6 +249,7 @@ textarea {
   + .valid-notify
   + .invalid-notify {
   opacity: 1;
+  transition: opacity 350ms 200ms var(--cubic);
 }
 
 .contacts-form-btn {
@@ -242,9 +286,6 @@ textarea {
   background-color: var(--aсcent-collor-hover);
 }
 
-/* .footer-contacts-item {
-} */
-
 .footer-contacts-link {
   display: block;
   padding: 10px 12px;
@@ -254,6 +295,8 @@ textarea {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   color: var(--main-text);
+
+  transition: border-color 350ms var(--cubic);
 }
 
 @media screen and (min-width: 768px) {
@@ -266,4 +309,78 @@ textarea {
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   border-color: var(--main-text);
+}
+
+/** iziToast - style */
+
+.iziToast-wrapper > .iziToast-capsule > .infoNotify {
+  position: relative;
+  max-width: 343px;
+  padding: 64px 32px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.iziToast-wrapper > .iziToast-capsule > .emptyNotify,
+.iziToast-wrapper > .iziToast-capsule > .errorNotify {
+  position: relative;
+
+  border-radius: 20px;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .iziToast-wrapper > .iziToast-capsule > .infoNotify {
+    max-width: 494px;
+    padding: 64px;
+  }
+}
+
+.iziToast-capsule > .infoNotify > .iziToast-body {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.iziToast-capsule > .infoNotify > .iziToast-body > .iziToast-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.iziToast-capsule > .infoNotify > .iziToast-body .iziToast-message {
+  margin-bottom: 0;
+
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.iziToast-capsule > .infoNotify > .iziToast-close,
+.iziToast-capsule > .emptyNotify > .iziToast-close,
+.iziToast-capsule > .errorNotify > .iziToast-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+
+  background-image: url(../img/footer/modal-close-notify.svg);
+  background-size: 22px 22px;
+}
+
+.iziToast-capsule > .errorNotify > .iziToast-close {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .iziToast-capsule > .infoNotify > .iziToast-close {
+    background-size: 24px 24px;
+  }
 }

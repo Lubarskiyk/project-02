@@ -1,35 +1,36 @@
 :root {
-    --background: #1c1d20;
-    --cards: #242527;
-    --arrow: #3b3b3b;
-    --button-text: #ed3b44;
-    --main-text: #fafafa;
-    --akcent-collor: #ed3b44;
-    --aсcent-collor-hover: #e0373f;
-    --success-color: #3cbc81;
-    --invalid-color: #e74a3b;
-    --form-color: rgba(250, 250, 250, 0.6);
-    /* mb sections  */
-    --mb-small: 32px;
-    --mb-medium: 64px;
-    --mb-big: 96px;
-    --mb-huge: 164px;
-    /* pb sections  */
-    --pb-small: 32px;
-    --pb-medium: 64px;
-    --pb-big: 96px;
-    --pb-huge: 164px;
-    /* gap mobile contacts */
-    --gap-mob-contacts: 4px;
-    /* gap tablet/desctop contacts/cards */
-    --gap-contacts: 8px;
-    --gap-cards: 16px;
-    /* font-weight/line-height/letter-spacing of text */
-    --font-weight: 500;
-    --line-height: 1.5;
-    --letter-spacing: -0.02em;
-    /*  transition*/
-    --trns: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --button-text: #ed3b44;
+  --main-text: #fafafa;
+  --akcent-collor: #ed3b44;
+  --aсcent-collor-hover: #e0373f;
+  --success-color: #3cbc81;
+  --invalid-color: #e74a3b;
+  --form-color: rgba(250, 250, 250, 0.6);
+  /* mb sections  */
+  --mb-small: 32px;
+  --mb-medium: 64px;
+  --mb-big: 96px;
+  --mb-huge: 164px;
+  /* pb sections  */
+  --pb-small: 32px;
+  --pb-medium: 64px;
+  --pb-big: 96px;
+  --pb-huge: 164px;
+  /* gap mobile contacts */
+  --gap-mob-contacts: 4px;
+  /* gap tablet/desctop contacts/cards */
+  --gap-contacts: 8px;
+  --gap-cards: 16px;
+  /* font-weight/line-height/letter-spacing of text */
+  --font-weight: 500;
+  --line-height: 1.5;
+  --letter-spacing: -0.02em;
+  /*  transition*/
+  --trns: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 body {
@@ -37,49 +38,49 @@ body {
     font-family: 'Inter Tight', sans-serif;
     background-color: var(--background);
     color: var(--main-text);
-    /*  */
+
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-    padding: 0 16px;
-    margin: 0 auto;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 375px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
+  .container {
+    max-width: 375px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 }
