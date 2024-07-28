@@ -1,7 +1,25 @@
 
 .menu {
+    --size-circle: 40px;
+    --pozition-circle: 100px;
+    --translate-x: -80px;
     width: 100%;
     position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        --size-circle: 50px;
+        --pozition-circle: 250px;
+        --translate-x: -100px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .menu {
+        --pozition-circle: 900px;
+
+    }
 }
 
 .open_theme {
@@ -40,13 +58,13 @@
 .menu-item {
     position: absolute;
     display: block;
-    top: 20px;
+    top: 10px;
     bottom: 0;
-    left: 0;
+    left: var(--pozition-circle);
     right: 0;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: var(--size-circle);
+    height: var(--size-circle);
     opacity: 0;
     transition: 0.5s;
 }
@@ -78,29 +96,34 @@
 }
 
 .isopen_changecolor > .menu-item:nth-child(1) {
-    transform: rotate(-9deg) translate(-100px);
+    transform: rotate(-9deg) translate(var(--translate-x));
 }
 
 .isopen_changecolor > .menu-item:nth-child(2) {
-    transform: rotate(-41.4deg) translateX(-100px);
+    transform: rotate(-41.4deg) translateX(var(--translate-x));
 }
 
 .isopen_changecolor > .menu-item:nth-child(3) {
-    transform: rotate(-73.8deg) translateX(-100px);
+    transform: rotate(-73.8deg) translateX(var(--translate-x));
 }
 
 .isopen_changecolor > .menu-item:nth-child(4) {
-    transform: rotate(-106.2deg) translateX(-100px);
+    transform: rotate(-106.2deg) translateX(var(--translate-x));
 }
 
 .isopen_changecolor > .menu-item:nth-child(5) {
-    transform: rotate(-138.6deg) translateX(-100px);
+    transform: rotate(-138.6deg) translateX(var(--translate-x));
 }
 
 .isopen_changecolor > .menu-item:nth-child(6) {
-    transform: rotate(-171deg) translateX(-100px);
+    transform: rotate(-171deg) translateX(var(--translate-x));
 }
 
 .theme_button {
     pointer-events: auto;
 }
+
+
+
+
+

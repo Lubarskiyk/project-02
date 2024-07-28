@@ -4,10 +4,9 @@ import { refs } from './refs.js';
 import { heroBackground } from './hero_background.js';
 import { setLocalData } from './localdata.js';
 
-const roote = window.getComputedStyle(refs.rootColor);
-
 refs.changecolor.addEventListener('click', () => {
   refs.openmenu.classList.toggle('isopen_changecolor');
+
   console.log(refs.openmenu);
 });
 const li_item = document.querySelectorAll('.theme_button');
