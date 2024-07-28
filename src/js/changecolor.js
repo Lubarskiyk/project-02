@@ -27,7 +27,8 @@ refs.openmenu.addEventListener('click', e => {
   setLocalData(id);
 });
 
-export function changerColor(accent_color, accent_color_hover) {
-  refs.rootColor.style.setProperty('--akcent-collor', accent_color);
-  refs.rootColor.style.setProperty('--aсcent-collor-hover', accent_color_hover);
+export function changerColor(accentColor, accentColorHover) {
+  refs.rootColor.style.setProperty('--akcent-collor', accentColor);
+  refs.rootColor.style.setProperty('--aсcent-collor-hover', accentColorHover);
+  console.log(accentColorHover);
 }
