@@ -9,7 +9,7 @@ const projectImage = import.meta.glob('/img/projects/*.png', {
   eager: true,
 });
 
-const projSlideWrap = document.querySelector('.proj-swiper-wrapper');
+const projSlideWrap = document.querySelector('.proj-swiper-wrap');
 const slides = projects
   .map(({ title, imgSrc, imgRetinaSrc, link, tags }) => {
     const tagsList = tags
