@@ -252,6 +252,17 @@ textarea {
   transition: opacity 350ms 200ms var(--cubic);
 }
 
+.spinner-wrap {
+  position: relative;
+  height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .spinner-wrap {
+    height: 150px;
+  }
+}
+
 .contacts-form-btn {
   width: 100px;
   height: 100px;
@@ -383,4 +394,41 @@ textarea {
   .iziToast-capsule > .infoNotify > .iziToast-close {
     background-size: 24px 24px;
   }
+}
+
+.loader {
+  position: absolute;
+  top: 25%;
+  left: 26px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .loader {
+    top: 32%;
+    left: 49px;
+    width: 53px;
+    height: 53px;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-hidden {
+  display: none;
 }
