@@ -1,4 +1,5 @@
 import { makePost } from './swagger-api';
+import { addInlineIziToastStyle, iziToastStyle } from './footer.iziToast.styles';
 
 export function handlerPost(evt) {
   evt.preventDefault();
@@ -15,11 +16,11 @@ export function handlerPost(evt) {
   }
 
   makePost({ email: emailValue, comment: commentValue })
-    .then(data => {
-      ////////////////////////////////todo
+    .then(() => {
+      iziToastStyle();
+      addInlineIziToastStyle();
+
       evt.target.reset();
-      console.log('success');
-      console.log(data);
     })
     .catch(error => {
       console.log(error);

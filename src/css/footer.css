@@ -313,3 +313,59 @@ textarea {
 .footer-contacts-link:focus {
   border-color: var(--main-text);
 }
+
+.iziToast-wrapper > .iziToast-capsule > .iziToast {
+  position: relative;
+  max-width: 343px;
+  padding: 64px 32px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .iziToast-wrapper > .iziToast-capsule > .iziToast {
+    max-width: 494px;
+    padding: 64px;
+  }
+}
+
+.iziToast-capsule > .iziToast > .iziToast-body {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.iziToast-capsule > .iziToast > .iziToast-body > .iziToast-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.iziToast-capsule > .iziToast > .iziToast-body .iziToast-message {
+  margin-bottom: 0;
+
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.iziToast-capsule > .iziToast > .iziToast-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+
+  background-image: url(../img/footer/modal-close-notify.svg);
+  background-size: 22px 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .iziToast-capsule > .iziToast > .iziToast-close {
+    background-size: 24px 24px;
+  }
+}
