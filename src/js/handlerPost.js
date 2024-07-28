@@ -1,5 +1,10 @@
 import { makePost } from './swagger-api';
-import { addInlineIziToastStyle, emptyComment, iziToastStyle } from './footer.backdrop.styles';
+import {
+  addInlineInfoNotifyStyle,
+  emptyNofify,
+  errorNotify,
+  infoNotify,
+} from './footer.backdrop.styles';
 
 export function handlerPost(evt) {
   evt.preventDefault();
@@ -9,21 +14,19 @@ export function handlerPost(evt) {
   const commentValue = comment.value.trim();
 
   if (!commentValue) {
-    emptyComment();
+    emptyNofify();
     return;
   }
 
   makePost({ email: emailValue, comment: commentValue })
     .then(() => {
-      iziToastStyle();
-      addInlineIziToastStyle();
+      infoNotify();
+      addInlineInfoNotifyStyle();
 
       evt.target.reset();
     })
-    .catch(error => {
-      console.log(error);
-      //////////////////////todo iziToast
-      alert('something went wrong');
+    .catch(() => {
+      errorNotify();
       return;
     })
     .finally(() => {});

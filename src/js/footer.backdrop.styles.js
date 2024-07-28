@@ -2,8 +2,9 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 import caution from '../img/footer/bi_exclamation-triangle.png';
+import iconOctagon from '../img/footer/bi_x-octagon.png';
 
-function iziToastStyle() {
+function infoNotify() {
   return iziToast.info({
     class: 'infoNotify',
     position: 'center',
@@ -29,7 +30,7 @@ function iziToastStyle() {
   });
 }
 
-function addInlineIziToastStyle() {
+function addInlineInfoNotifyStyle() {
   const strong = document.querySelector('.infoNotify .iziToast-title');
   strong.style.textAlign = 'center';
   strong.style.marginRight = 0;
@@ -38,7 +39,7 @@ function addInlineIziToastStyle() {
   strong.style.letterSpacing = '-0.02em';
 }
 
-function emptyComment() {
+function emptyNofify() {
   iziToast.warning({
     class: 'emptyNotify',
     position: 'topRight',
@@ -56,4 +57,19 @@ function emptyComment() {
   });
 }
 
-export { iziToastStyle, addInlineIziToastStyle, emptyComment };
+function errorNotify() {
+  iziToast.error({
+    class: 'errorNotify',
+    position: 'topRight',
+    maxWidth: '340px',
+    message: 'Service not found',
+    messageColor: 'white',
+    backgroundColor: '#ef4040',
+    iconUrl: iconOctagon,
+    layout: 1,
+    progressBarColor: '#b51b1b',
+    closeOnEscape: true,
+  });
+}
+
+export { infoNotify, addInlineInfoNotifyStyle, emptyNofify, errorNotify };
