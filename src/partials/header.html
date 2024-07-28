@@ -3,46 +3,50 @@
     <div class="header-container">
       <div class="logo-wrapper">
         <a href="./index.html" class="image-wrapper">
-          <img src="../img/header/image.png" alt="logo" width="80" height="80" />
+          <img src="/img/header/image.png" alt="logo" width="80" height="80" />
           <p class="logo-text">jefferson*</p>
         </a>
       </div>
       <nav class="navigation-header">Menu</nav>
-      <button class="open-burger"  >
-      <svg class="burger-icon" width="28" height="28">
-        <use href="./img/header/header-svg.svg#icon-burger"></use>
-      </svg>
+      <button class="open-burger">
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/header/header-svg.svg#icon-burger"></use>
+        </svg>
       </button>
+      <a href="">
+        <button type="button" class="change-theme">Themes</button>
+      </a>
+
       <button type="button" class="order-btn">Order the project</button>
 
       <!--Modal window  -->
-<!-- is-open добавить ниже -->
-  <div class="modal-overlay">
-    <div class="modal">
-      <nav class="navigation-modal">
-      <ul class="nav-list">
-      <li class="nav-item">
-      <a href="./aboutme.html" id="#aboutme" class="modal-text">About me</a>
-      </li>
-      <li class="nav-item">
-      <a href="./aboutme.html" id="#benefits" class="modal-text">Benefits</a>
-      </li>
-      <li class="nav-item">
-      <a href="./projects.html" id="#projects" class="modal-text">Projects</a>
-      </li>
-      <li class="nav-item">
-      <a href="./faq.html" id="#faq" class="modal-text">FAQ</a>
-      </li>
-      </ul>
-      <button type="button" class="order-btn">Order the project</button>
-      </nav>
-      <button type="button" class="close-btn">
-        <svg width="28" height="28" class="modal-close-btn ">
-          <use href="../img/header/header-svg.svg#icon-close"></use>
-        </svg>
-      </button>
+      <!-- is-open добавить ниже -->
+      <div class="modal-overlay">
+        <div class="modal">
+          <nav class="navigation-modal">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="./aboutme.html" id="#aboutme" class="modal-text">About me</a>
+              </li>
+              <li class="nav-item">
+                <a href="./aboutme.html" id="#benefits" class="modal-text">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a href="./projects.html" id="#projects" class="modal-text">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="./faq.html" id="#faq" class="modal-text">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="order-mobile">Order the project</button>
+        </div>
+        <button type="button" class="close-btn">
+          <svg width="28" height="28" class="modal-close-btn">
+            <use href="../img/header/header-svg.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-
   </div>
 </header>
