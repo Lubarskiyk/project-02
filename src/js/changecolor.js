@@ -24,11 +24,12 @@ refs.openmenu.addEventListener('click', e => {
     'background_image'
   );
   refs.rootColor.style.setProperty('--akcent-collor', `${theme.accent_color}`);
+  changerColor(theme.accent_color, theme.aсcent_collor_hover);
+  refs.openmenu.classList.toggle('isopen_changecolor');
   setLocalData(id);
 });
 
 export function changerColor(accentColor, accentColorHover) {
   refs.rootColor.style.setProperty('--akcent-collor', accentColor);
   refs.rootColor.style.setProperty('--aсcent-collor-hover', accentColorHover);
-  console.log(accentColorHover);
 }

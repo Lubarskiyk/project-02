@@ -22,8 +22,9 @@ function renderFAQ(data) {
         `<li class="ac ac-first">
             <h2 class="ac-header">
                 <button type="button" class="ac-trigger">${question}
-                <span class="svg-wrap"> <svg class="icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-up"></use>
+                <span class="svg-wrap"> 
+                <svg class="icon" width="20" height="20">
+                 <use href="../img/icons.svg#icon-up"></use>
               </svg></span></button>
              </h2>
             <div class="ac-panel">
@@ -40,7 +41,7 @@ function renderFAQ(data) {
             <h2 class="ac-header">
                 <button type="button" class="ac-trigger">${question}
                 <span class="svg-wrap"> <svg class="icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-up"></use>
+                <use href="../img/icons.svg#icon-up"></use>
               </svg></span></button>
              </h2>
             <div class="ac-panel">
