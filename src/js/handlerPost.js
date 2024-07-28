@@ -31,8 +31,3 @@ export function handlerPost(evt) {
     })
     .finally(() => {});
 }
-
-// console.error(
-//       error.response.status,
-//       `${error.response.statusText}: ${error.response.data.message}`
-//     )

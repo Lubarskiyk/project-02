@@ -32,6 +32,7 @@ function infoNotify() {
 
 function addInlineInfoNotifyStyle() {
   const strong = document.querySelector('.infoNotify .iziToast-title');
+
   strong.style.textAlign = 'center';
   strong.style.marginRight = 0;
   strong.style.fontFamily = 'Inter Tight';

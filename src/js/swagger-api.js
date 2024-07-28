@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'https://portfolio-js.b.goit.study/pi';
+const URL = 'https://portfolio-js.b.goit.study/api';
 axios.defaults.baseURL = URL;
 
 export async function makePost(user) {
