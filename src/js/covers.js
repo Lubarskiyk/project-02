@@ -10,11 +10,16 @@ let createElement = null;
 function createAnimation() {
   createElement = document.createElement('style');
   const animation = `@keyframes Line {
-    from {
+
+    0% {
+
         transform: translateX(80%);
     }
-    to {
-        transform: translateX(-10%);
+    50% {
+        transform: translateX(-50%);
+    }
+         100% {
+        transform: translateX(80%);
     }
 }
     `;
