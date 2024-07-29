@@ -5,6 +5,9 @@ import '/js/covers.js';
 import '/js/about_me.js';
 import '/js/faq.js';
 import '/js/changecolor.js';
+import '/js/footer.js';
+import '/js/projects.js';
+import '/js/fetchReviews.js';
 
 renderHero();
 renderPhotoAboutme();
