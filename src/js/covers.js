@@ -130,7 +130,7 @@ const coversImage = import.meta.glob('/img/covers/*.png', {
 });
 const coverLi = document.querySelectorAll('.cover-list');
 const coverArrLi = [...coverLi];
-console.log(coverLi.length);
+
 coverArrLi.forEach((cover, index) => {
   const pictureHtml = generatePictureTag(
     coversImage,
