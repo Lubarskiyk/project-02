@@ -16,12 +16,15 @@ const orderMobile = document.querySelector('.order-mobile');
 
 const navList = document.querySelector('.nav-list');
 
+const ulHeadline = document.querySelector('.social_media');
+
 //ADD Click
 clickBurger.addEventListener('click', openModalWindow);
 
 function openModalWindow() {
   modalOverlay.classList.add('is-open');
   headLine.style.opacity = 0;
+  ulHeadline.style.opacity = 0;
   logoWrapper.style.opacity = 0;
   changeTheme.style.opacity = 0;
   clickBurger.style.opacity = 0;
@@ -34,6 +37,7 @@ closeBtn.addEventListener('click', closeModalWindow);
 function closeModalWindow() {
   modalOverlay.classList.remove('is-open');
   headLine.style.opacity = '';
+  ulHeadline.style.opacity = '';
   logoWrapper.style.opacity = '';
   changeTheme.style.opacity = '';
   clickBurger.style.opacity = '';
@@ -50,6 +54,7 @@ function handlerNavMenu(evt) {
   } else {
     modalOverlay.classList.remove('is-open');
     headLine.style.opacity = '';
+    ulHeadline.style.opacity = '';
     logoWrapper.style.opacity = '';
     changeTheme.style.opacity = '';
     clickBurger.style.opacity = '';
@@ -63,6 +68,7 @@ function linkToFooter(evt) {
   evt.preventDefault();
   modalOverlay.classList.remove('is-open');
   headLine.style.opacity = '';
+  ulHeadline.style.opacity = '';
   logoWrapper.style.opacity = '';
   changeTheme.style.opacity = '';
   clickBurger.style.opacity = '';
@@ -73,13 +79,13 @@ function linkToFooter(evt) {
   }, 300);
 }
 
-// NAVIGATION modal
 navList.addEventListener('click', NavMenu);
 
 function NavMenu(evt) {
   if (evt.target.tagName === 'A') {
     modalOverlay.classList.remove('is-open');
     headLine.style.opacity = '';
+    ulHeadline.style.opacity = '';
     logoWrapper.style.opacity = '';
     changeTheme.style.opacity = '';
     clickBurger.style.opacity = '';
