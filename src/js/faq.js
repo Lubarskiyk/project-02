@@ -1,30 +1,20 @@
 import Accordion from 'accordion-js';
-
-// import 'accordion-js/dist/accordion.min.css';
-
 import faqData from '/data/faq.json';
 
 const refs = {
-  accordionsWrap: document.querySelector('.ac-wrap'),
+  faqList: document.querySelector('.js-accordion-container-faq'),
 };
 
 function renderFAQ(data) {
-  const ulAccFirst = document.createElement('ul');
-  const ulAccSecond = document.createElement('ul');
-
-  ulAccFirst.classList.add('accordion-container', 'js-accordion-container-first');
-  ulAccSecond.classList.add('accordion-container', 'js-accordion-container-second');
-
-  const liAccFirst = data
-    .slice(0, Math.floor(data.length / 2))
+  return data
     .map(
       ({ question, answer }) =>
-        `<li class="ac ac-first">
+        `<li class="ac ac-faq">
             <h2 class="ac-header">
-                <button type="button" class="ac-trigger">${question}
-                <span class="svg-wrap"> 
-                <svg class="icon" width="20" height="20">
-                 <use href="../img/icons.svg#icon-up"></use>
+                <button type="button" class="ac-trigger" aria-label="open the answer to the question">${question}
+                <span class="svg-wrap-faq"> 
+                <svg class="icon-faq" width="20" height="20">
+                 <use href="/img/icons.svg#icon-up"></use>
               </svg></span></button>
              </h2>
             <div class="ac-panel">
@@ -33,40 +23,11 @@ function renderFAQ(data) {
        </li>`
     )
     .join('');
-  const liAccSecond = data
-    .slice(Math.floor(data.length / 2))
-    .map(
-      ({ question, answer }) =>
-        `<li class="ac ac-second">
-            <h2 class="ac-header">
-                <button type="button" class="ac-trigger">${question}
-                <span class="svg-wrap"> <svg class="icon" width="20" height="20">
-                <use href="../img/icons.svg#icon-up"></use>
-              </svg></span></button>
-             </h2>
-            <div class="ac-panel">
-              <p class="ac-text">${answer}</p>
-             </div>
-       </li>`
-    )
-    .join('');
-
-  ulAccFirst.innerHTML = liAccFirst;
-  ulAccSecond.innerHTML = liAccSecond;
-  return [ulAccFirst, ulAccSecond];
 }
 
-const accordions = renderFAQ(faqData);
-refs.accordionsWrap.append(...accordions);
+refs.faqList.insertAdjacentHTML('beforeend', renderFAQ(faqData));
 
-new Accordion('.js-accordion-container-first', {
-  duration: 300,
+new Accordion('.js-accordion-container-faq', {
+  duration: 600,
   showMultiple: true,
-  openOnInit: [0],
-});
-
-new Accordion('.js-accordion-container-second', {
-  duration: 300,
-  showMultiple: true,
-  openOnInit: [0],
 });
