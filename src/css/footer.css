@@ -432,3 +432,9 @@ textarea {
 .is-hidden {
   display: none;
 }
+
+.contacts-form-inp.input {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
