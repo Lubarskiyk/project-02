@@ -26,11 +26,11 @@ const slides = projects
       <div class="proj-slide-prescription">
         <ul class="proj-list-tags">${tagsList}</ul>
         <h3 class="proj-slide-title">${title}</h3>
-          <button class="proj-link-wrap" type="button" aria-label="go to project page">
-          <a href="${link}" class="proj-slide-link" target="_blank">
+          <div class="proj-link-wrap" type="button" >
+          <a href="${link}" class="proj-slide-link" target="_blank" aria-label="go to project page">
           See project
         </a>
- </button>
+ </div>
       </div>
       <div class="proj-slide-img">
         ${generatePictureTag(projectImage, imgSrc, imgRetinaSrc, 'proj-img', `${title}`)}
