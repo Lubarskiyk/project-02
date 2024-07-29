@@ -17,20 +17,11 @@
     display: flex;
     transition: opacity 0.5s ease-in-out;
     animation-name: Line;
-    animation-duration: 17s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-}
-
-@keyframes Line {
-    from {
-        transform: translateX(80%);
-
-    }
-
-    to {
-        transform: translateX(-80%);
-    }
+    position: relative;
+    transform: translateX(80%)
 }
 
 .cover-container {
@@ -127,4 +118,8 @@
     position: absolute;
     width: 1440px;
     height: 960px;
+}
+
+.circleColor {
+    fill:  var(--akcent-collor);
 }
