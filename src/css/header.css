@@ -65,6 +65,7 @@
 .menu-button {
     cursor: pointer;
     display: inline-block;
+<<<<<<< Updated upstream
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -75,6 +76,9 @@
     background: none;
     border: none;
     padding: 0;
+=======
+    text-decoration: underline;     
+>>>>>>> Stashed changes
 }
 
 .custom-list {
@@ -93,7 +97,7 @@
 }
 
 .menu-list-item {
-    padding: 10px;
+    padding: 5px;
 }
 
 .menu-list-item a {

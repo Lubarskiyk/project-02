@@ -1,5 +1,3 @@
-// const n = require('accordion-js');
-
 const clickBurger = document.querySelector('.open-burger');
 
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -42,7 +40,22 @@ function closeModalWindow() {
   overflowModal.style.overflow = '';
 }
 
-//CLICK to Order button
+// NAVIGATION modal
+navList.addEventListener('click', handlerNavMenu);
+
+function handlerNavMenu(evt) {
+  evt.preventDefault();
+  if (evt.target !== evt.currentTarget) {
+    return;
+  } else {
+    modalOverlay.classList.remove('is-open');
+    headLine.style.opacity = '';
+    logoWrapper.style.opacity = '';
+    changeTheme.style.opacity = '';
+    clickBurger.style.opacity = '';
+    overflowModal.style.overflow = '';
+  }
+}
 
 orderMobile.addEventListener('click', linkToFooter);
 
