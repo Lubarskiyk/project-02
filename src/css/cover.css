@@ -1,7 +1,13 @@
 .cover-img {
-    width: 252px;
-    height: 163px;
-    max-width: none;
+    /*width: 252px;*/
+    /*height: 163px;*/
+    /*max-width: none;*/
+}
+
+.cover-img img {
+    max-width: 534px;
+    max-height: 314px;
+    aspect-ratio: 534/314;
 }
 
 @media (min-width: 768px) {
@@ -121,5 +127,5 @@
 }
 
 .circleColor {
-    fill:  var(--akcent-collor);
+    fill: var(--akcent-collor);
 }
