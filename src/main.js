@@ -4,6 +4,7 @@ import { hideTitle } from './js/covers.js';
 import '/js/covers.js';
 import '/js/about_me.js';
 import '/js/faq.js';
+import '/js/changecolor.js';
 
 renderHero();
 renderPhotoAboutme();
