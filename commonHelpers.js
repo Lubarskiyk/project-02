@@ -38,11 +38,11 @@ import{A as O,S as y,N as A,K as $,a as C,i as _,b as U}from"./assets/vendor-ySS
       <p>${i}</p>
     </li>`).join("")}</ul>
         <h3 class="proj-slide-title">${e}</h3>
-          <button class="proj-link-wrap" type="button" aria-label="go to project page">
-          <a href="${r}" class="proj-slide-link" target="_blank">
+          <div class="proj-link-wrap" type="button" >
+          <a href="${r}" class="proj-slide-link" target="_blank" aria-label="go to project page">
           See project
         </a>
- </button>
+ </div>
       </div>
       <div class="proj-slide-img">
         ${u(Mo,s,o,"proj-img",`${e}`)}
