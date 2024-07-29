@@ -17,7 +17,7 @@
     display: flex;
     transition: opacity 0.5s ease-in-out;
     animation-name: Line;
-    animation-duration: 5s;
+    animation-duration: 20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     position: relative;
