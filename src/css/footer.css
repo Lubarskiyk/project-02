@@ -138,6 +138,7 @@ textarea {
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
   color: var(--main-text);
+  background-color: transparent;
 
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   transition: border-color var(--trns);
@@ -264,6 +265,10 @@ textarea {
   border-color: rgba(250, 250, 250, 0.5);
 }
 
+.contacts-form-inp::selection {
+  background-color: transparent;
+}
+
 .contacts-form-inp.input:not(:focus):not(:placeholder-shown):valid {
   border-color: var(--success-color);
 }
@@ -273,13 +278,15 @@ textarea {
 
 .valid-notify,
 .invalid-notify {
-  opacity: 0;
   position: absolute;
   bottom: -24px;
   left: 0;
   color: var(--success-color);
 
-  transition: opacity 350ms var(--cubic);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 350ms var(--cubic), visibility 350ms var(--cubic);
 }
 
 .invalid-notify {
@@ -294,7 +301,9 @@ textarea {
   + .valid-notify
   + .invalid-notify {
   opacity: 1;
-  transition: opacity 350ms 200ms var(--cubic);
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 350ms 200ms var(--cubic), visibility 350ms var(--cubic);
 }
 
 .spinner-wrap {
