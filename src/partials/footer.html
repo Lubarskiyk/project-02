@@ -1,8 +1,21 @@
 <footer id="work-together" class="footer">
   <div class="container">
     <h2 class="footer-title">
-      <img src="./img/footer/mob-logo@1x.webp" alt="logo" />Let’s
-      <span class="footer-accent-text">work</span>together
+      <picture>
+        <source
+          srcset="./img/footer/logo@1x.webp 1x, ./img/footer/logo@2x.webp 2x"
+          media="(min-width: 1440px)" />
+        <source
+          srcset="./img/footer/logo@1x.webp 1x, ./img/footer/logo@2x.webp 2x"
+          media="(min-width: 768px)" />
+        <source
+          srcset="./img/footer/mob-logo@1x.webp 1x, ./img/footer/mob-logo@2x.webp 2x"
+          media="(min-width: 375px)" />
+        <source
+          srcset="./img/footer/mob-logo@1x.webp 1x, ./img/footer/mob-logo@2x.webp 2x"
+          media="(max-width: 375px)" />
+        <img loading="lazy" src="./img/footer/mob-logo@1x.webp" alt="logo" /></picture
+      >Let’s <span class="footer-accent-text">work</span>together
     </h2>
 
     <form class="js-footer-form footer-contacts-form" name="contact-us" autocomplete="off">
@@ -32,13 +45,16 @@
         <label for="Comment" class="contacts-form-label textarea">comments</label>
       </div>
 
-      <button class="contacts-form-btn" type="submit">Send</button>
+      <div class="spinner-wrap">
+        <button class="contacts-form-btn js-btn-footer" type="submit">Send</button>
+        <div class="loader js-loader-footer"></div>
+      </div>
     </form>
 
     <ul class="footer-contacts-list">
       <li class="footer-contacts-item">
         <a href="mailto:lloydjefferson@gmail.com" class="footer-contacts-link"
-          >lloydjefferson@gmail.com</a
+        >lloydjefferson@gmail.com</a
         >
       </li>
       <li class="footer-contacts-item">
@@ -47,4 +63,4 @@
     </ul>
   </div>
 </footer>
-<script type="module" src="./js/footer.js"></script>
+
