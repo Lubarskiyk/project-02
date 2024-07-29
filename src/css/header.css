@@ -62,26 +62,34 @@
     display: none;
 }
 
-.custom-checkbox1 {
+.menu-button {
     cursor: pointer;
-    position: relative;
     display: inline-block;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .custom-list {
     list-style: none;
     display: none;
     position: absolute;
-    top: 100%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
+    background-color: transparent;
     padding: 0;
     margin: 0;
     z-index: 1000;
     text-align: center;
     width: max-content;
-
 }
 
 .menu-list-item {
@@ -90,16 +98,19 @@
 
 .menu-list-item a {
     text-decoration: none;
-    color: black;
+    color: var(--main-text);
 }
+
 
 .custom-checkbox {
     display: none;
 }
 
-.custom-checkbox:checked+.custom-list {
+
+.custom-checkbox:checked~.custom-list {
     display: block;
 }
+
 /*  */
 
 /* MODAL WINDOW */
@@ -174,12 +185,14 @@
     border: none;
     background-color: transparent;
     fill: #fbfbfb;
+    position: absolute;
+    top: 32px;
+        right: 16px;
 }
 
 .modal-close-btn {
-    position: absolute;
-    top: 32px;
-    right: 16px;
+    
+    
     width: 28px;
     height: 28px;
     fill: transparent;
@@ -197,7 +210,7 @@
     background: var(--akcent-collor);
     border: none;
     width: 90px;
-    height: 40px;
+    height: 45px;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -225,6 +238,11 @@
     color: #fafafa;
 }
 
+.order-mobile:hover, .order-mobile:focus{
+    color: var(--aсcent-collor-hover);
+    transition: var(--trns);
+}
+
 @media screen and (min-width: 768px) {
     .two-btn-wrapper {
         display: flex;
@@ -238,7 +256,13 @@
 
     .nav-menu {
         display: block;
-        margin: 0 auto;
+            position: relative;
+            width: max-content;
+            margin: 0 auto;
+    }
+
+    .menu-list-item{
+        padding-bottom: 7px;
     }
 
     .burger-icon {
@@ -248,7 +272,7 @@
     .order-btn {
         display: block;
         border-radius: 60px;
-        background: #ed3b44;
+        background: var(--akcent-collor);
         border: none;
         padding: 14px 31px;
         width: 164px;
@@ -258,6 +282,11 @@
         font-size: 14px;
         letter-spacing: -0.02em;
         color: #fafafa;
+    }
+
+    .order-btn:hover,.order-btn:focus{
+        color: var(--aсcent-collor-hover);
+        transition: var(--trns);
     }
 }
 

@@ -16,7 +16,7 @@ const overflowModal = document.querySelector('body');
 
 const orderMobile = document.querySelector('.order-mobile');
 
-const navModal = document.querySelector('.navigation-modal');
+const navList = document.querySelector('.nav-list');
 
 //ADD Click
 clickBurger.addEventListener('click', openModalWindow);
@@ -42,22 +42,40 @@ function closeModalWindow() {
   overflowModal.style.overflow = '';
 }
 
-// NAVIGATION modal
-navModal.addEventListener('click', handlerNavMenu);
-
-function handlerNavMenu(evt) {
-  evt.preventDefault;
-}
-
 //CLICK to Order button
 
 orderMobile.addEventListener('click', linkToFooter);
 
-function linkToFooter() {
+function linkToFooter(evt) {
+  evt.preventDefault();
   modalOverlay.classList.remove('is-open');
   headLine.style.opacity = '';
   logoWrapper.style.opacity = '';
   changeTheme.style.opacity = '';
   clickBurger.style.opacity = '';
   overflowModal.style.overflow = '';
+
+  setTimeout(() => {
+    document.querySelector('#work-together').scrollIntoView({ behavior: 'smooth' });
+  }, 300);
+}
+
+// NAVIGATION modal
+navList.addEventListener('click', handlerNavMenu);
+
+function handlerNavMenu(evt) {
+  if (evt.target.tagName === 'A') {
+    modalOverlay.classList.remove('is-open');
+    headLine.style.opacity = '';
+    logoWrapper.style.opacity = '';
+    changeTheme.style.opacity = '';
+    clickBurger.style.opacity = '';
+    overflowModal.style.overflow = '';
+
+    const targetId = evt.target.getAttribute('href');
+
+    setTimeout(() => {
+      document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+    }, 300);
+  }
 }
