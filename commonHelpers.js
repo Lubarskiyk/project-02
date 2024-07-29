@@ -38,8 +38,8 @@ import{A as O,S as y,N as A,K as $,a as C,i as _,b as U}from"./assets/vendor-ySS
       <p>${i}</p>
     </li>`).join("")}</ul>
         <h3 class="proj-slide-title">${e}</h3>
-  <button class="proj-link-wrap" type="button" aria-label="go to project page">
-  <a href="${r}" class="proj-slide-link" target="_blank">
+          <button class="proj-link-wrap" type="button" aria-label="go to project page">
+          <a href="${r}" class="proj-slide-link" target="_blank">
           See project
         </a>
  </button>
