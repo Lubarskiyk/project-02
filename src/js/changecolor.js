@@ -6,8 +6,6 @@ import { setLocalData } from './localdata.js';
 
 refs.changecolor.addEventListener('click', () => {
   refs.openmenu.classList.toggle('isopen_changecolor');
-
-  console.log(refs.openmenu);
 });
 const li_item = document.querySelectorAll('.theme_button');
 li_item.forEach((e, key) => {
@@ -26,10 +24,12 @@ refs.openmenu.addEventListener('click', e => {
     'background_image'
   );
   refs.rootColor.style.setProperty('--akcent-collor', `${theme.accent_color}`);
+  changerColor(theme.accent_color, theme.aсcent_collor_hover);
+  refs.openmenu.classList.toggle('isopen_changecolor');
   setLocalData(id);
 });
 
-export function changerColor(accent_color, accent_color_hover) {
-  refs.rootColor.style.setProperty('--akcent-collor', accent_color);
-  refs.rootColor.style.setProperty('--aсcent-collor-hover', accent_color_hover);
+export function changerColor(accentColor, accentColorHover) {
+  refs.rootColor.style.setProperty('--akcent-collor', accentColor);
+  refs.rootColor.style.setProperty('--aсcent-collor-hover', accentColorHover);
 }

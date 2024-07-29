@@ -1,6 +1,6 @@
 /* ACCORDION */
 .aboutme {
-    padding-bottom: 64px;
+
 }
 
 .container {}
@@ -79,6 +79,11 @@
     padding: 9px;
     width: 40px;
     height: 40px;
+    transition: border-color var(--trns);
+
+}
+.ac-trigger:hover .svg-wrap, .ac-trigger:focus .svg-wrap {
+    border-color: var(--main-text);
 }
 
 .icon {
@@ -95,7 +100,6 @@
 
 @media screen and (min-width: 768px) {
     .aboutme {
-        padding-bottom: 96px;
     }
 
     .container {
@@ -111,7 +115,6 @@
 
 @media screen and (min-width: 1440px) {
     .aboutme {
-        padding-bottom: 164px;
     }
 
     .container {
@@ -178,14 +181,19 @@
     display: block;
     width: 28px;
     height: 28px;
-    fill: var(--arrow);
     border: none;
     transition: transform var(--trns);
 }
 
 .aboutme-swiper-btn svg {
+    fill: var(--arrow);
     width: 100%;
     height: 100%;
+    transition: fill var(--trns);
+}
+
+.aboutme-swiper-btn:hover svg, .aboutme-swiper-btn:focus svg{
+    fill: var(--main-text)
 }
 
 @media screen and (min-width: 768px) {

@@ -33,12 +33,15 @@
   --cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-body {
-    overflow-x: hidden;
-    font-family: 'Inter Tight', sans-serif;
-    background-color: var(--background);
-    color: var(--main-text);
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  overflow-x: hidden;
+  font-family: 'Inter Tight', sans-serif;
+  background-color: var(--background);
+  color: var(--main-text);
 }
 
 .visually-hidden {

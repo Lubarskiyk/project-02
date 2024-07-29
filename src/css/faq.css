@@ -1,3 +1,144 @@
-a {
-    color: red
+.faq-container {
+  padding-top: var(--pb-medium);
+}
+
+.accordion-container-faq {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+  margin-bottom: var(--mb-small);
+}
+
+.accordion-container-faq .ac-faq {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.accordion-container-faq .ac-faq:last-child {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.ac-faq .ac-header .ac-trigger {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  text-transform: inherit;
+  color: var(--main-text);
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ac-faq .ac-header .ac-trigger:focus {
+  color: var(--main-text);
+}
+
+.ac-faq .ac-header .ac-trigger::after {
+  display: none;
+}
+
+.ac-faq.is-active > .ac-header .ac-trigger::after {
+  display: none;
+}
+.svg-wrap-faq {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 7px;
+  width: 34px;
+  height: 34px;
+  margin-left: 20px;
+}
+
+.icon-faq {
+  fill: var(--main-text);
+  display: inline-block;
+  margin: 0 auto;
+  transform: rotate(180deg) translateY(25%);
+  transition: transform var(--trns);
+}
+
+.ac-faq.is-active .icon-faq {
+  transform: rotate(0deg);
+  transition: transform var(--trns);
+}
+
+.accordion-container-faq .ac-faq .ac-panel .ac-text {
+  font-weight: var(--font-weight);
+  font-size: 16px;
+  color: var(--form-color);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-container {
+    padding-top: var(--pb-big);
+  }
+  .accordion-container-faq .ac-faq {
+    padding-top: var(--pb-small);
+  }
+
+  .svg-wrap-faq {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-container-faq .ac-faq .ac-panel {
+    min-width: 656px;
+    margin-bottom: 24px;
+  }
+
+  .accordion-container-faq .ac-faq:last-child .svg-wrap-faq {
+    margin-left: 180px;
+  }
+
+  .ac-trigger:focus,
+  .ac-trigger:hover .svg-wrap-faq {
+    border-color: var(--form-color);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-container {
+    padding-top: var(--pb-huge);
+  }
+
+  .accordion-container-faq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+
+  .accordion-container-faq .ac-faq:nth-child(5) {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  }
+  .accordion-container-faq .ac-faq {
+    width: 688px;
+    padding-right: 32px;
+  }
+  .accordion-container-faq .ac-faq:nth-child(even) {
+    border-left: 1px solid rgba(250, 250, 250, 0.2);
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  .accordion-container-faq .ac-faq .ac-panel {
+    margin-bottom: 26px;
+  }
 }

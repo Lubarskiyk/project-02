@@ -157,8 +157,8 @@
 
 .scroll-to-header-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 5px;
     background-color: var(--akcent-collor);
     fill: #fff;
     border: none;
