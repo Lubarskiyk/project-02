@@ -80,11 +80,17 @@
 
 .custom-list {
     list-style: none;
-    display: none;
+    /* display: none; */
+    display: block;
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
+    transform: translateX(-50%) scaleY(0);
+    /*  */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /*  */
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -109,7 +115,11 @@
 
 
 .custom-checkbox:checked~.custom-list {
-    display: block;
+    /* display: block; */
+    transform: translateX(-50%) scaleY(1);
+        /* Изменено на scaleY(1) для отображения */
+        opacity: 1;
+        /* Изменено на opacity: 1 для отображения */
 }
 
 /*  */

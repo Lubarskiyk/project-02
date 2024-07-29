@@ -74,9 +74,9 @@ function linkToFooter(evt) {
 }
 
 // NAVIGATION modal
-navList.addEventListener('click', handlerNavMenu);
+navList.addEventListener('click', NavMenu);
 
-function handlerNavMenu(evt) {
+function NavMenu(evt) {
   if (evt.target.tagName === 'A') {
     modalOverlay.classList.remove('is-open');
     headLine.style.opacity = '';
