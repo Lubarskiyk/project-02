@@ -18,7 +18,7 @@ function renderFAQ(data) {
                 <button type="button" class="ac-trigger" aria-label="open the answer to the question">${question}
                 <span class="svg-wrap-faq"> 
                 <svg class="icon-faq" width="20" height="20">
-                 <use href="/icons.svg#icon-up"></use>
+                 <use href="./icons.svg#icon-up"></use>
               </svg></span></button>
              </h2>
             <div class="ac-panel">
