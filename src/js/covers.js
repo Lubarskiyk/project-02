@@ -140,5 +140,4 @@ coverArrLi.forEach((cover, index) => {
     pictureArr[index].coverAlt
   );
   cover.innerHTML = pictureHtml;
-  // cover.insertAdjacentHTML('beforeend', pictureHtml);
 });
