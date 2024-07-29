@@ -115,11 +115,9 @@
 
 
 .custom-checkbox:checked~.custom-list {
-    /* display: block; */
     transform: translateX(-50%) scaleY(1);
-        /* Изменено на scaleY(1) для отображения */
-        opacity: 1;
-        /* Изменено на opacity: 1 для отображения */
+    opacity: 1;
+    
 }
 
 /*  */
