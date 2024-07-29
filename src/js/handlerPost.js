@@ -1,4 +1,5 @@
 import { makePost } from './swagger-api';
+import { hideSpinner, showSpinner } from './spinnerHideShow';
 import {
   addInlineInfoNotifyStyle,
   emptyNofify,
@@ -18,6 +19,8 @@ export function handlerPost(evt) {
     return;
   }
 
+  showSpinner();
+
   makePost({ email: emailValue, comment: commentValue })
     .then(() => {
       infoNotify();
@@ -29,5 +32,7 @@ export function handlerPost(evt) {
       errorNotify();
       return;
     })
-    .finally(() => {});
+    .finally(() => {
+      hideSpinner();
+    });
 }

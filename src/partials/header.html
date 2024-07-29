@@ -10,28 +10,34 @@
 
       <!-- <nav class="navigation-header">Menu</nav> -->
       <nav class="nav-menu">
-        <label class="custom-checkbox1">
-          Menu
-          <input type="checkbox" class="custom-checkbox" />
-          <ul class="custom-list">
-            <li class="menu-list-item"><a href="#">About me</a></li>
-            <li class="menu-list-item"><a href="#">Benefits</a></li>
-            <li class="menu-list-item"><a href="#">Projects</a></li>
-            <li class="menu-list-item"><a href="#">FAQ</a></li>
-          </ul>
-        </label>
+        <input type="checkbox" class="custom-checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-button" aria-label="Open menu">Menu</label>
+        <ul class="custom-list">
+          <li class="menu-list-item" aria-label="Go to section About me">
+            <a href="#">About me</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#benefits-section" aria-label="Go to section Benefits">Benefits</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#projects-section" aria-label="Go to section Projects">Projects</a>
+          </li>
+          <li class="menu-list-item" aria-label="Go to section FAQ">
+            <a href="#faq-section">FAQ</a>
+          </li>
+        </ul>
       </nav>
+
       <!--  -->
       <div class="two-btn-wrapper">
         <button type="button" class="change-theme">Themes</button>
 
-        <a href="#work-together" class="order-btn">
-          <!--          <button type="button" class="order-btn">Order the project</button>-->
-          Order the project
-        </a>
+        <a href="#work-together" class="order-btn" aria-label="Go to section Work together">
+          Order the project</a
+        >
       </div>
 
-      <button class="open-burger">
+      <button class="open-burger" aria-label="close modal window">
         <svg class="burger-icon" width="28" height="28">
           <use href="./img/header/header-svg.svg#icon-burger"></use>
         </svg>
@@ -44,24 +50,34 @@
           <nav class="navigation-modal">
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#aboutme" class="modal-text">About me</a>
+                <a href="#work-together" class="modal-text" aria-label="Go to section About me"
+                  >About me</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#benefits" class="modal-text">Benefits</a>
+                <a href="#benefits-section" class="modal-text" aria-label="Go to section Benefits"
+                  >Benefits</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#projects" class="modal-text">Projects</a>
+                <a href="#projects-section" class="modal-text" aria-label="Go to section Project"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#faq" class="modal-text">FAQ</a>
+                <a href="#faq-section" class="modal-text" aria-label="Go to section FAQ">FAQ</a>
               </li>
             </ul>
           </nav>
-          <a href="#work-together" class="modal-link-to-footer">
+          <a
+            href="#work-together"
+            class="modal-link-to-footer"
+            aria-label="Go to section Work together"
+          >
             <button type="button" class="order-mobile">Order the project</button>
           </a>
         </div>
-        <button type="button" class="close-btn">
+        <button type="button" class="close-btn" aria-label="close modal window">
           <svg width="28" height="28" class="modal-close-btn">
             <use href="./img/header/header-svg.svg#icon-close"></use>
           </svg>
