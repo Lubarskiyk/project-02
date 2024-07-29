@@ -14,7 +14,7 @@ import{A as _,S as m,N as h,K as w,i as p,a as O,b as f}from"./assets/vendor-BvC
       <p>${i}</p>
     </li>`).join("")}</ul>
         <h3 class="proj-slide-title">${e}</h3>
-  <button class="proj-link-wrap" type="button">
+  <button class="proj-link-wrap" type="button" aria-label="go to project page">
   <a href="${r}" class="proj-slide-link" target="_blank">
           See project
         </a>
