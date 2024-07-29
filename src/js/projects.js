@@ -26,7 +26,7 @@ const slides = projects
       <div class="proj-slide-prescription">
         <ul class="proj-list-tags">${tagsList}</ul>
         <h3 class="proj-slide-title">${title}</h3>
-  <button class="proj-link-wrap" type="button">
+  <button class="proj-link-wrap" type="button" aria-label="go to project page">
   <a href="${link}" class="proj-slide-link" target="_blank">
           See project
         </a>
