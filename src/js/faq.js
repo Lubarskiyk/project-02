@@ -1,10 +1,12 @@
 import Accordion from 'accordion-js';
 import faqData from '/data/faq.json';
+import icons from '/img/icons.svg';
 
 const refs = {
   faqList: document.querySelector('.js-accordion-container-faq'),
 };
 
+// /img/icons.svg#icon-up
 function renderFAQ(data) {
   return data
     .map(
@@ -14,7 +16,7 @@ function renderFAQ(data) {
                 <button type="button" class="ac-trigger" aria-label="open the answer to the question">${question}
                 <span class="svg-wrap-faq"> 
                 <svg class="icon-faq" width="20" height="20">
-                 <use href="/img/icons.svg#icon-up"></use>
+                 <use href="${icons}#icon-up"></use>
               </svg></span></button>
              </h2>
             <div class="ac-panel">
