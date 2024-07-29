@@ -1,6 +1,8 @@
 import Accordion from 'accordion-js';
 import faqData from '/data/faq.json';
-import icons from '/img/icons.svg';
+import icons from '/img/icons.svg?url';
+
+console.log(icons);
 
 const refs = {
   faqList: document.querySelector('.js-accordion-container-faq'),
