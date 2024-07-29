@@ -1,26 +1,34 @@
 import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
 import faqData from '/data/faq.json';
-import { refs } from './refs.js';
 
+const refs = {
+  faqList: document.querySelector('.js-accordion-container-faq'),
+};
+
+// /img/icons.svg#icon-up
 function renderFAQ(data) {
-  console.log();
   return data
     .map(
       ({ question, answer }) =>
-        `<div class="ac">
+        `<li class="ac ac-faq">
             <h2 class="ac-header">
-                <button type="button" class="ac-trigger">${question}</button>
+                <button type="button" class="ac-trigger" aria-label="open the answer to the question">${question}
+                <span class="svg-wrap-faq"> 
+                <svg class="icon-faq" width="20" height="20">
+                 <use href="./icons.svg#icon-up"></use>
+              </svg></span></button>
              </h2>
             <div class="ac-panel">
               <p class="ac-text">${answer}</p>
              </div>
-       </div>`
+       </li>`
     )
     .join('');
 }
 
-console.log(refs.accordionContainer);
-refs.accordionContainer.insertAdjacentHTML('beforeend', renderFAQ(faqData));
+refs.faqList.insertAdjacentHTML('beforeend', renderFAQ(faqData));
 
-new Accordion('.accordion-container');
+new Accordion('.js-accordion-container-faq', {
+  duration: 600,
+  showMultiple: true,
+});
