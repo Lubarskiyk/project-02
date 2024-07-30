@@ -38,8 +38,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    padding-top: var(--pb-medium);
     backdrop-filter: blur(30px);
     background: rgba(217, 217, 217, 0.04);
 }
@@ -47,8 +46,7 @@
 @media (min-width: 768px) {
     .cover-container {
         height: 960px;
-        margin-top: 164px;
-        margin-bottom: 164px;
+        padding-top: var(--pb-big);
     }
 }
 
