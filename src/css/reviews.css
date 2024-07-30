@@ -122,6 +122,48 @@
     fill: var(--main-text);
 }
 
+/* =========scroll-btn=========== */
+
+.scroll-to-header-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
+    background-color: var(--akcent-collor);
+    fill: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: none;
+    z-index: 999;
+
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity var(--trns), display var(--trns), background-color var(--trns);
+}
+
+.scroll-to-header-btn.show {
+    display: block;
+}
+
+.scroll-to-header-btn:hover,
+.scroll-to-header-btn:focus {
+    opacity: 1;
+    background-color: var(--aсcent-collor-hover);
+}
+
+.scroll-icon {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+/* =========media=========== */
+
 @media screen and (min-width: 768px) {
     .reviews {
         padding-top: var(--pb-big);
@@ -149,6 +191,17 @@
         width: 32px;
         height: 32px;
     }
+
+    .scroll-to-header-btn {
+        width: 68px;
+        height: 68px;
+        bottom: 25px;
+    }
+
+    .scroll-icon {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -160,44 +213,4 @@
     .reviews-wrap {
         width: 332px;
     }
-}
-
-
-/* =========scroll-btn=========== */
-
-.scroll-to-header-btn {
-    position: fixed;
-    bottom: 25px;
-    right: 5px;
-    background-color: var(--akcent-collor);
-    fill: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: none;
-    z-index: 999;
-
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity var(--trns), display var(--trns), background-color var(--trns);
-}
-
-.scroll-to-header-btn.show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.scroll-to-header-btn:hover,
-.scroll-to-header-btn:focus {
-    opacity: 1;
-    background-color: var(--aсcent-collor-hover);
-}
-
-.scroll-icon {
-    width: 24px;
-    height: 24px;
 }
