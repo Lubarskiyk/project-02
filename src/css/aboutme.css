@@ -79,6 +79,7 @@
     width: 40px;
     height: 40px;
     transition: border-color var(--trns);
+    position: relative;
 
 }
 
@@ -87,15 +88,18 @@
 }
 
 .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: inline-block;
     align-items: center;
     fill: var(--main-text);
-    transform: rotate(180deg);
+    transform:translate(-50%, -75%) rotate(180deg);
     transition: transform var(--trns);
 }
 
 .ac.is-active .icon {
-    transform: rotate(0deg);
+    transform: translate(-50%, -25%) rotate(0deg);
 }
 
 @media screen and (min-width: 768px) {
