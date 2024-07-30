@@ -23,6 +23,12 @@ refs.openmenu.addEventListener('click', e => {
     theme.path_retina,
     'background_image'
   );
+  refs.modalBackground.innerHTML = generatePictureTag(
+    heroBackground,
+    theme.path,
+    theme.path_retina,
+    'background_image'
+  );
   refs.rootColor.style.setProperty('--akcent-collor', `${theme.accent_color}`);
   changerColor(theme.accent_color, theme.aсcent_collor_hover);
   refs.openmenu.classList.toggle('isopen_changecolor');

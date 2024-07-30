@@ -1,7 +1,3 @@
-textarea {
-  resize: none;
-}
-
 .footer {
   padding-top: var(--pb-small);
   padding-bottom: var(--pb-small);
@@ -144,7 +140,7 @@ textarea {
   transition: border-color var(--trns);
 }
 
-.contacts-form-inp.input {
+.contacts-form-inp {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -166,9 +162,9 @@ textarea {
   color: var(--form-color);
 }
 
-.contacts-form-textarea {
+/* .contacts-form-textarea {
   display: block;
-}
+} */
 
 .contacts-form-label {
   position: absolute;

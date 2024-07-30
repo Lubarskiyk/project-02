@@ -24,5 +24,15 @@ export function renderHero() {
       'background'
     )
   );
+  refs.modalBackground.insertAdjacentHTML(
+    'beforeend',
+    generatePictureTag(
+      heroBackground,
+      theme.path,
+      theme.path_retina,
+      'background_image',
+      'background'
+    )
+  );
   changerColor(theme.accent_color, theme.aсcent_collor_hover);
 }

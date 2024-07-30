@@ -22,7 +22,6 @@
 .background_image img {
     width: 100%;
     height: 100%;
-
 }
 
 .headline1 {
@@ -60,6 +59,11 @@
     letter-spacing: -0.02em;
 }
 
+.social_link:hover,
+.social_link:focus {
+    background-color: var(--aсcent-collor-hover);
+}
+
 @media screen and (min-width: 375px) {
     .social_media {
         flex-wrap: nowrap;
@@ -80,23 +84,16 @@
     .social_item {
         height: 55px;
         background-color: transparent;
-
     }
 
     .social_link {
         padding: 18px 20px;
         font-size: 16px;
         transition: background-color var(--trns);
-
     }
 }
 
-.social_link:hover {
-    background-color: var(--aсcent-collor-hover);
-}
-
 @media screen and (min-width: 1440px) {
-
     .headline1 {
         padding: 300px 146px 0 146px;
         margin-bottom: 243px;
