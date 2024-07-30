@@ -3,6 +3,10 @@
     padding-bottom: var(--pb-medium);
 }
 
+.reviews>.container {
+    min-height: 492px;
+}
+
 .reviews-title {
     font-weight: 600;
     font-size: 16px;
@@ -30,7 +34,6 @@
     border-radius: 20px;
     padding: 32px 24px;
 }
-
 
 .reviews-wrap--error {
     flex-basis: 100%;
@@ -85,6 +88,12 @@
     transition: border-color var(--trns);
 }
 
+.reviews-swiper-button-left,
+.reviews-swiper-button-right {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    transition: border var(--trns);
+}
+
 .reviews-swiper-button-left.swiper-button-disabled,
 .reviews-swiper-button-right.swiper-button-disabled {
     border: 1px solid rgba(250, 250, 250, 0.2);
@@ -93,13 +102,8 @@
     pointer-events: none;
 }
 
-.reviews-swiper-button-left,
-.reviews-swiper-button-right {
-    border: 1px solid rgba(250, 250, 250, 0.5);
-}
-
-
-.reviews-icon {
+.reviews-swiper-button-left .reviews-icon,
+.reviews-swiper-button-right .reviews-icon {
     width: 24px;
     height: 24px;
     fill: currentColor;
@@ -111,15 +115,21 @@
     fill: var(--arrow);
 }
 
-.reviews-swiper-button-left .reviews-icon,
-.reviews-swiper-button-right .reviews-icon {
+.reviews-swiper-button-left .reviews-icon:hover,
+.reviews-swiper-button-left .reviews-icon:focus,
+.reviews-swiper-button-right .reviews-icon:hover,
+.reviews-swiper-button-right .reviews-icon:focus {
     fill: var(--main-text);
 }
 
 @media screen and (min-width: 768px) {
     .reviews {
         padding-top: var(--pb-big);
-        padding-bottom: var(--pb-big);
+        padding-bottom: 85px;
+    }
+
+    .reviews>.container {
+        min-height: 508px;
     }
 
     .reviews-swiper-arrows-container {
@@ -134,16 +144,16 @@
         height: 68px;
     }
 
-    .reviews-icon {
+    .reviews-swiper-button-left .reviews-icon,
+    .reviews-swiper-button-right .reviews-icon {
         width: 32px;
         height: 32px;
     }
 }
 
-
 @media screen and (min-width: 1440px) {
     .reviews {
-        padding-top: 164px;
+        padding-top: var(--pb-huge);
         padding-bottom: 128px;
     }
 
@@ -181,7 +191,8 @@
     align-items: center;
 }
 
-.scroll-to-header-btn:hover {
+.scroll-to-header-btn:hover,
+.scroll-to-header-btn:focus {
     opacity: 1;
     background-color: var(--aсcent-collor-hover);
 }
