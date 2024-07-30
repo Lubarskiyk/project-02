@@ -80,7 +80,7 @@
     height: 40px;
     transition: border-color var(--trns);
     position: relative;
-
+    transition: transform var(--trns);
 }
 
 .ac-trigger:hover .svg-wrap, .ac-trigger:focus .svg-wrap {
@@ -94,12 +94,12 @@
     display: inline-block;
     align-items: center;
     fill: var(--main-text);
-    transform:translate(-50%, -75%) rotate(180deg);
-    transition: transform var(--trns);
+    transform:translate(-50%, -77%) rotate(180deg);
+    
 }
 
-.ac.is-active .icon {
-    transform: translate(-50%, -25%) rotate(0deg);
+.ac.is-active .svg-wrap {
+    transform: rotate(180deg);
 }
 
 @media screen and (min-width: 768px) {
