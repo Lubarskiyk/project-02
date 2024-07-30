@@ -8,6 +8,8 @@ import '/js/changecolor.js';
 import '/js/footer.js';
 import '/js/projects.js';
 import '/js/fetchReviews.js';
+import '/js/swiperReviews.js';
+import '/js/scroll-btn.js';
 
 renderHero();
 renderPhotoAboutme();
