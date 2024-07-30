@@ -1,4 +1,4 @@
-import { refs } from './refs.footer';
+import { refs } from './refs';
 
 function hideSpinner() {
   refs.spinner.classList.add('is-hidden');

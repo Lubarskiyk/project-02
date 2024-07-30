@@ -6,4 +6,6 @@ export const refs = {
   openmenu: document.querySelector('.js_menu_changecolor'),
   changecolor: document.querySelector('.change-theme'),
   form: document.querySelector('.js-footer-form'),
+  spinner: document.querySelector('.js-loader-footer'),
+  btnFooter: document.querySelector('.js-btn-footer'),
 };
