@@ -91,7 +91,7 @@
     }
 }
 
-.social_link:hover {
+.social_link:hover, .social_link:focus {
     background-color: var(--aсcent-collor-hover);
 }
 
