@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menuItems.forEach(item => {
     item.addEventListener('click', () => {
-      checkbox.checked = false; // Снимаем флажок, чтобы закрыть меню
+      checkbox.checked = false;
     });
   });
 });

@@ -217,13 +217,17 @@
     border-radius: 60px;
     background: var(--akcent-collor);
     border: none;
-    width: 90px;
-    height: 45px;
+    /* width: 90px;
+    height: 45px; */
+    width: 60px;
+    height: 35px;
+    /*  */
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
+    transform: translateX(-45px);
 }
 
 .modal-link-to-footer {
@@ -267,6 +271,7 @@
         position: relative;
         width: max-content;
         margin: 0 auto;
+        padding-top: 10px;
     }
 
     .menu-list-item {
@@ -296,6 +301,14 @@
         color: var(--aсcent-collor-hover);
         transition: var(--trns);
     }
+
+    .change-theme{
+         width: 90px;
+        height: 45px; 
+        transform: translateX(0);
+    
+               
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -304,4 +317,9 @@
         flex-wrap: nowrap;
         gap: 14px;
     }
+
+        .change-theme {
+            /* width: 60px;
+            height: 35px; */
+        }
 }
