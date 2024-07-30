@@ -1,5 +1,6 @@
 export const refs = {
   heroBackground: document.querySelector('.js_image'),
+  modalBackground: document.querySelector('.js_image_modal'),
   developerFoto: document.querySelector('.js-dev-foto'),
   accordionContainer: document.querySelector('.js-accordion-container'),
   rootColor: document.documentElement,
