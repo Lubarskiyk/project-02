@@ -41,6 +41,16 @@
   justify-content: space-between;
 }
 
+.title-wrap-faq {
+  max-width: 240px;
+}
+
+.ac-faq:first-child .title-wrap-faq {
+  max-width: 265px;
+}
+.ac-faq:last-child .title-wrap-faq {
+  max-width: 289px;
+}
 .ac-faq .ac-header .ac-trigger:focus {
   color: var(--main-text);
 }
@@ -53,27 +63,33 @@
   display: none;
 }
 .svg-wrap-faq {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  flex-direction: row;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
   padding: 7px;
   width: 34px;
   height: 34px;
-  margin-left: 20px;
+  transition: border-color var(--trns);
+  position: relative;
+  transition: transform var(--trns);
 }
 
 .icon-faq {
   fill: var(--main-text);
   display: inline-block;
-  margin: 0 auto;
-  transform: rotate(180deg) translateY(25%);
-  transition: transform var(--trns);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%, -77%) rotate(180deg);
 }
 
-.ac-faq.is-active .icon-faq {
-  transform: rotate(0deg);
-  transition: transform var(--trns);
+.ac-faq.is-active .svg-wrap-faq {
+  transform: rotate(180deg);
 }
 
 .accordion-container-faq .ac-faq .ac-panel .ac-text {
@@ -93,6 +109,16 @@
     padding-top: var(--pb-small);
   }
 
+  .title-wrap-faq {
+    max-width: 485px;
+  }
+
+  .ac-faq:first-child .title-wrap-faq {
+    max-width: 574px;
+  }
+  .ac-faq:last-child .title-wrap-faq {
+    max-width: 485px;
+  }
   .svg-wrap-faq {
     padding: 10px;
     width: 40px;
@@ -104,13 +130,9 @@
     margin-bottom: 24px;
   }
 
-  .accordion-container-faq .ac-faq:last-child .svg-wrap-faq {
-    margin-left: 180px;
-  }
-
-  .ac-trigger:focus,
+  .ac-trigger:focus .svg-wrap-faq,
   .ac-trigger:hover .svg-wrap-faq {
-    border-color: var(--form-color);
+    border-color: var(--main-text);
   }
 }
 
