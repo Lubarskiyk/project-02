@@ -1,9 +1,9 @@
 import { generatePictureTag } from './generatepicturetag.js';
 
-export function hideTitle() {
-  const title = document.querySelector('.title');
-  title.style.display = 'none';
-}
+// export function hideTitle() {
+//   const title = document.querySelector('.title');
+//   title.style.display = 'none';
+// }
 
 let createElement = null;
 
