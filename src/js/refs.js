@@ -8,4 +8,7 @@ export const refs = {
   form: document.querySelector('.js-footer-form'),
   spinner: document.querySelector('.js-loader-footer'),
   btnFooter: document.querySelector('.js-btn-footer'),
+  formModal: document.querySelector('.js-modal-form'),
+  spinnerModal: document.querySelector('.js-loader-modal'),
+  btnFooterModal: document.querySelector('.js-btn-modal'),
 };
