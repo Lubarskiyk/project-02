@@ -12,7 +12,7 @@ function renderFAQ(data) {
       ({ question, answer }) =>
         `<li class="ac ac-faq">
             <h2 class="ac-header">
-                <button type="button" class="ac-trigger" aria-label="open the answer to the question">${question}
+                <button type="button" class="ac-trigger" aria-label="open the answer to the question"><span class="title-wrap-faq">${question}</span>
                 <span class="svg-wrap-faq"> 
                 <svg class="icon-faq" width="20" height="20">
                  <use href="./icons.svg#icon-up"></use>
