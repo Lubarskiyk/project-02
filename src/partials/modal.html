@@ -1,0 +1,68 @@
+<div class="backdrop-order-prj">
+  <div class="modal-order-prj">
+    <button
+      aria-label="Close Order"
+      class="modal-btn close-mob-modal"
+      type="button"
+      data-modal-close
+    >
+      <svg class="modal-icon" width="22" height="22">
+        <use href="/img/icons.svg#icon-modal-close-icon"></use>
+      </svg>
+    </button>
+
+    <h2 class="footer-title">
+      <picture>
+        <source
+          srcset="./img/footer/logo@1x.webp 1x, ./img/footer/logo@2x.webp 2x"
+          media="(min-width: 1440px)" />
+        <source
+          srcset="./img/footer/logo@1x.webp 1x, ./img/footer/logo@2x.webp 2x"
+          media="(min-width: 768px)" />
+        <source
+          srcset="./img/footer/mob-logo@1x.webp 1x, ./img/footer/mob-logo@2x.webp 2x"
+          media="(min-width: 375px)" />
+        <source
+          srcset="./img/footer/mob-logo@1x.webp 1x, ./img/footer/mob-logo@2x.webp 2x"
+          media="(max-width: 375px)" />
+        <img loading="lazy" src="./img/footer/mob-logo@1x.webp" alt="logo" /></picture
+      >Let’s <span class="footer-accent-text">work</span>together
+    </h2>
+
+    <form class="js-footer-form footer-contacts-form" name="contact-us" autocomplete="off">
+      <div class="contacts-form-field">
+        <input
+          type="email"
+          name="emailContact"
+          class="contacts-form-inp input"
+          id="email"
+          autocomplete="on"
+          required
+          placeholder=" "
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        /><label for="email" class="contacts-form-label"> clients@gmail.com</label>
+        <span class="valid-notify">Succes!</span>
+        <span class="invalid-notify">Invalid email, try again</span>
+      </div>
+
+      <div class="contacts-form-field">
+        <input
+          type="text"
+          name="comment"
+          id="Comment"
+          class="contacts-form-inp contacts-form-textarea"
+          placeholder="Text us"
+          required
+        />
+        <label for="Comment" class="contacts-form-label textarea">comments</label>
+      </div>
+
+      <div class="spinner-wrap">
+        <button class="contacts-form-btn js-btn-footer" type="submit">Send</button>
+        <div class="loader js-loader-footer"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="./js/modal.js"></script>
