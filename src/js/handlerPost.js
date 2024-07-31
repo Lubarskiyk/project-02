@@ -6,7 +6,7 @@ import {
   errorNotify,
   infoNotify,
 } from './footer.backdrop.styles';
-import { toggleModal } from './toggleModal';
+import { handlerKey, toggleModal } from './toggleModal';
 
 export function handlerPost(evt) {
   evt.preventDefault();
@@ -26,6 +26,7 @@ export function handlerPost(evt) {
     .then(() => {
       if (evt.target.classList.contains('js-modal-form')) {
         toggleModal();
+        window.removeEventListener('keydown', handlerKey);
       }
 
       infoNotify();
