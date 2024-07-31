@@ -1,91 +1,94 @@
 /* ACCORDION */
 .accordion-container {
-    background-color: transparent;
-    margin-top: 64px;
+  background-color: transparent;
+  margin-top: 64px;
 }
 
 .ac .ac-trigger {
-    font: 500 16px 'Inter Tight', sans-serif;
+  font: 500 16px 'Inter Tight', sans-serif;
 }
 
 .ac {
-    border-bottom: 1px solid var(--arrow);
+  border-bottom: 1px solid var(--arrow);
 }
 
 .ac:not(:first-child) {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .ac-header {
 }
 
 .ac-trigger {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: var(--arrow);
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: color var(--trns);
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--arrow);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   transition: color var(--trns);
+
 }
 
 .ac-panel {
-    background-color: transparent;
-    margin-top: 8px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height var(--trns), padding var(--trns);
-    padding: 0;
-    max-width: 612px;
-    display: block;
-    margin-bottom: 20px;
+  background-color: transparent;
+  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--trns), padding var(--trns);
+  padding: 0;
+  max-width: 612px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .ac-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: var(--main-text);
-    transition: opacity var(--trns);
-    opacity: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  transition: opacity var(--trns);
+  opacity: 0;
 }
 
 .ac.is-active .ac-text {
-    opacity: 1;
+  opacity: 1;
 }
 
 .ac-text-1 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .ac.is-active .ac-panel {
-    max-height: none;
+  max-height: none;
 }
 
 .svg-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    border: 1px solid var(--arrow);
-    border-radius: 100px;
-    padding: 9px;
-    width: 40px;
-    height: 40px;
-    transition: border-color var(--trns);
-    position: relative;
-    transition: transform var(--trns);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid var(--arrow);
+  border-radius: 100px;
+  padding: 9px;
+  width: 40px;
+  height: 40px;
+  transition: border-color var(--trns);
+  position: relative;
+  transition: transform var(--trns);
 }
 
-.ac-trigger:hover .svg-wrap, .ac-trigger:focus .svg-wrap {
-    border-color: var(--main-text);
+.ac-trigger:hover .svg-wrap,
+.ac-trigger:focus .svg-wrap {
+  border-color: var(--main-text);
 }
 
 .ac-trigger:hover,
@@ -94,168 +97,174 @@ color: var(--main-text);
 }
 
 .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: inline-block;
-    align-items: center;
-    fill: var(--main-text);
-    transform:translate(-50%, -77%) rotate(180deg);
-    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  align-items: center;
+  fill: var(--main-text);
+  transform: translate(-50%, -77%) rotate(180deg);
 }
 
 .ac.is-active .svg-wrap {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 768px) {
-    .aboutme {
-    }
+  .aboutme {
+  }
 
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    .ac:not(:first-child) {
-        margin-top: 32px;
-    }
+  .ac:not(:first-child) {
+    margin-top: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 
-    .ac-panel {
-        margin-left: auto;
-        margin-right: 68px;
-    }
+  .ac-panel {
+    margin-left: auto;
+    margin-right: 68px;
+  }
 }
 
 /* SWIPER */
 .about-container-swiper {
-    margin-top: 32px;
-    display: flex;
+  margin-top: 32px;
+  display: flex;
 }
 
 .about-me-swiper {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    width: 260px;
-    margin: 0;
-    overflow: hidden;
-    transition: transform var(--trns);
+  height: 130px;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin: 0;
+  overflow: hidden;
+  transition: transform var(--trns);
 }
 
 .aboutme-skills-list.swiper-wrapper {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .aboutme-skills-item.swiper-slide {
-    width: 130px;
+  width: 104px;
+  height: 104px;
+  border: 1px solid var(--arrow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .aboutme-skills-item.swiper-slide {
     height: 130px;
-    border: 1px solid var(--arrow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    text-align: center;
+  }
 }
 
 .aboutme-skills-item.swiper-slide-active {
-    background-color: var(--akcent-collor);
+  background-color: var(--akcent-collor);
 }
 
 .aboutme-skills-text {
-    font-weight: var(--font-weight);
-    font-size: 16px;
-    letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
 }
 
 .swiper-button-wrap {
-    width: 28px;
-    margin-left: 55px;
-    display: flex;
-    align-items: center;
+  width: 28px;
+  margin-left: 55px;
+  display: flex;
+  align-items: center;
 }
 
 .aboutme-swiper-btn {
-    display: block;
-    width: 28px;
-    height: 28px;
-    border: none;
-    transition: transform var(--trns);
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: none;
+  transition: transform var(--trns);
 }
 
 .aboutme-swiper-btn svg {
-    fill: var(--arrow);
-    width: 100%;
-    height: 100%;
-    transition: fill var(--trns);
+  fill: var(--arrow);
+  width: 100%;
+  height: 100%;
+  transition: fill var(--trns);
 }
 
-.aboutme-swiper-btn:hover svg, .aboutme-swiper-btn:focus svg {
-    fill: var(--main-text)
+.aboutme-swiper-btn:hover svg,
+.aboutme-swiper-btn:focus svg {
+  fill: var(--main-text);
 }
 
 @media screen and (min-width: 768px) {
-    .about-container-swiper {
-        margin-top: 64px;
-    }
+  .about-container-swiper {
+    margin-top: 64px;
+  }
 
-    .about-me-swiper {
-        height: 200px;
-        width: 600px;
-    }
+  .about-me-swiper {
+    height: 200px;
+    width: 600px;
+  }
 
-    .aboutme-skills-item.swiper-slide {
-        height: 200px;
-    }
+  .aboutme-skills-item.swiper-slide {
+    height: 200px;
+  }
 
-    .aboutme-skills {
-        padding-bottom: var(--mb-big);
-    }
+  .aboutme-skills {
+    padding-bottom: var(--mb-big);
+  }
 
-    .aboutme-skills-item {
-        width: 200px;
-        height: 200px;
-    }
+  .aboutme-skills-item {
+    width: 200px;
+    height: 200px;
+  }
 
-    .aboutme-skills-text {
-        font-size: 20px;
-    }
+  .aboutme-skills-text {
+    font-size: 20px;
+  }
 
-    .swiper-button-wrap {
-        width: 40px;
-        margin-left: 64px;
-    }
+  .swiper-button-wrap {
+    width: 40px;
+    margin-left: 64px;
+  }
 
-    .aboutme-swiper-btn {
-        width: 40px;
-        height: 40px;
-    }
+  .aboutme-swiper-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .about-container-swiper {
-        margin-top: 96px;
-    }
+  .about-container-swiper {
+    margin-top: 96px;
+  }
 
-    .about-me-swiper {
-        width: 1232px;
-        padding-left: 32px;
-    }
+  .about-me-swiper {
+    width: 1232px;
+    padding-left: 32px;
+  }
 
-    .aboutme-skills {
-        padding-bottom: var(--mb-huge);
-    }
+  .aboutme-skills {
+    padding-bottom: var(--mb-huge);
+  }
 
-    .swiper-button-wrap {
-        margin-left: 72px;
-    }
+  .swiper-button-wrap {
+    margin-left: 72px;
+  }
 }

@@ -44,6 +44,10 @@ body {
   color: var(--main-text);
 }
 
+.is-lock {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

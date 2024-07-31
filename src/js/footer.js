@@ -1,5 +1,5 @@
 import { handlerPost } from './handlerPost';
-import { refs } from './refs.footer';
+import { refs } from './refs';
 
 refs.form.addEventListener('submit', handlerPost);
 

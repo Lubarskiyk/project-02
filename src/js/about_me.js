@@ -1,4 +1,3 @@
-
 import Accordion from 'accordion-js';
 import Swiper from 'swiper';
 import { Keyboard, Navigation } from 'swiper/modules';
@@ -23,6 +22,9 @@ const swiper = new Swiper('.about-me-swiper', {
     320: {
       slidesPerView: 2,
     },
+    375: {
+      slidesPerView: 2,
+    },
     768: {
       slidesPerView: 3,
     },
@@ -34,9 +36,8 @@ const swiper = new Swiper('.about-me-swiper', {
   speed: 400,
 });
 
-
-
 const nextButton = document.querySelector('.swiper-button-wrap .aboutme-swiper-btn');
+
   nextButton.addEventListener('click', () => {
     if (window.innerWidth >= 1440) {
 setTimeout(() => {
@@ -45,5 +46,6 @@ setTimeout(() => {
       }, 400);
     }
   });
+
 
 

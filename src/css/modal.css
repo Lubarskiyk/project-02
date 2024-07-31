@@ -1,0 +1,206 @@
+.backdrop-order-prj {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(15, 15, 16, 0.6);
+  z-index: 999;
+}
+
+.backdrop-order-prj.is-hidden-modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms var(--cubic) 350ms, visibility 250ms var(--cubic) 350ms;
+}
+
+.modal-order-prj {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 343px;
+  max-height: 100vh;
+  padding: 64px 32px;
+
+  background-color: #1c1d20;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
+
+  transition: transform 350ms var(--cubic);
+  overflow-y: auto;
+}
+
+.backdrop-order-prj.is-hidden-modal > .modal-order-prj {
+  transform: translate(-50%, -200%);
+}
+
+.modal-btn {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  transform: scale(1.1);
+
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+  border: transparent;
+  background-color: transparent;
+
+  cursor: pointer;
+  outline: transparent;
+  transition: transform 250ms var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-btn {
+    right: 18px;
+    top: 18px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  transform: scale(1.2);
+  background-color: var(--aсcent-collor-hover);
+}
+
+.modal-btn:active {
+  background-color: #e03740a4;
+}
+
+.modal-icon {
+  stroke: rgb(250, 250, 250);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-icon {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.modal-btn:active .modal-icon {
+  stroke: rgba(250, 250, 250, 0.681);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-order-prj {
+    width: 704px;
+    padding: 64px 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-order-prj {
+    width: 1148px;
+    padding: 96px 64px;
+  }
+}
+
+.modal-order-prj > .footer-contacts-form {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-order-prj .contacts-form-inp {
+    width: 237px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-order-prj .contacts-form-inp {
+    width: 375px;
+  }
+}
+
+.modal-order-prj .contacts-form-inp:focus + .contacts-form-label,
+.modal-order-prj .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label {
+  transform: translate(160px, -29px) scale(0.8);
+}
+.modal-order-prj .contacts-form-inp:focus + .contacts-form-label.textarea,
+.modal-order-prj .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label.textarea {
+  transform: translate(210px, -29px) scale(0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-order-prj .contacts-form-inp:focus + .contacts-form-label,
+  .modal-order-prj .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label {
+    transform: translate(115px, -29px) scale(0.8);
+  }
+  .modal-order-prj .contacts-form-inp:focus + .contacts-form-label.textarea,
+  .modal-order-prj .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label.textarea {
+    transform: translate(170px, -29px) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-order-prj .contacts-form-inp:focus + .contacts-form-label,
+  .modal-order-prj .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label {
+    transform: translate(255px, -29px) scale(0.8);
+  }
+  .modal-order-prj .contacts-form-inp:focus + .contacts-form-label.textarea,
+  .modal-order-prj .contacts-form-inp:not(:placeholder-shown) + .contacts-form-label.textarea {
+    transform: translate(307px, -29px) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-order-prj .spinner-wrap {
+    height: 100px;
+  }
+
+  .modal-order-prj .contacts-form-btn {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modal-order-prj .loader {
+    top: 24%;
+    left: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-order-prj .spinner-wrap {
+    height: 150px;
+  }
+
+  .modal-order-prj .contacts-form-btn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .modal-order-prj .loader {
+    top: 32%;
+    left: 49px;
+  }
+}
