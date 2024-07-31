@@ -10,6 +10,10 @@ const orderMobile = document.querySelector('.order-mobile');
 
 const navList = document.querySelector('.nav-list');
 
+const navMenu = document.querySelector('.nav-menu');
+
+const customList = document.querySelector('.custom-list');
+
 //ADD Click
 clickBurger.addEventListener('click', openModalWindow);
 
@@ -82,3 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// MENU
+navMenu.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  customList.classList.toggle('is-open-menu');
+}
