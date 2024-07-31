@@ -16,11 +16,8 @@ refs.spinnerModal.classList.add('is-hidden');
 export function toggleModalClick(evt) {
   const backdropModal = evt.target.classList.contains('js-backdrop-order');
   const parentBtnClose = evt.target.closest('.js-modal-close-btn');
-  const parentBtnSend = evt.target.closest('.js-spinner-wrap');
 
   if (backdropModal || parentBtnClose) {
-    toggleModal();
-  } else if (parentBtnSend) {
     toggleModal();
   }
 }
