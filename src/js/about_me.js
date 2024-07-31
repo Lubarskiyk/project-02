@@ -37,9 +37,15 @@ const swiper = new Swiper('.about-me-swiper', {
 });
 
 const nextButton = document.querySelector('.swiper-button-wrap .aboutme-swiper-btn');
-nextButton.addEventListener('click', () => {
-  if (window.innerWidth >= 1440) {
-    swiper.slides[swiper.activeIndex].parentNode.appendChild(swiper.slides[swiper.activeIndex]);
-    swiper.update();
-  }
-});
+
+  nextButton.addEventListener('click', () => {
+    if (window.innerWidth >= 1440) {
+setTimeout(() => {
+      swiper.slides[swiper.activeIndex].parentNode.appendChild(swiper.slides[swiper.activeIndex]);
+      swiper.update();
+      }, 400);
+    }
+  });
+
+
+

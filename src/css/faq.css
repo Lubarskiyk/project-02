@@ -43,6 +43,7 @@
 
 .title-wrap-faq {
   max-width: 240px;
+  transition: transform var(--trns);
 }
 
 .ac-faq:first-child .title-wrap-faq {
@@ -107,6 +108,14 @@
   }
   .accordion-container-faq .ac-faq {
     padding-top: var(--pb-small);
+  }
+
+  .ac-trigger:hover .title-wrap-faq {
+    color: rgba(250, 250, 250, 0.9);
+    transform: scale(1.02);
+  }
+  .ac-trigger:focus .title-wrap-faq {
+    transform: scale(1.02);
   }
 
   .title-wrap-faq {
