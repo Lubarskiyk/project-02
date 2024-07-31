@@ -7,4 +7,5 @@ export const refs = {
   openmenu: document.querySelector('.js_menu_changecolor'),
   changecolor: document.querySelector('.change-theme'),
   form: document.querySelector('.js-footer-form'),
+  projSlideWrap: document.querySelector('.proj-swiper-wrap'),
 };
