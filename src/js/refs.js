@@ -19,4 +19,5 @@ export const refs = {
   closeModalBtn: document.querySelector('[data-modal-close]'),
 
   projSlideWrap: document.querySelector('.proj-swiper-wrap'),
+  body: document.querySelector('body'),
 };

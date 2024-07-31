@@ -11,6 +11,7 @@ function toggleModalClick(evt) {
 
 function toggleModal() {
   refs.modalOrder.classList.toggle('is-hidden-modal');
+  refs.body.classList.toggle('is-lock');
 }
 
 export { toggleModalClick, toggleModal };
