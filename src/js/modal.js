@@ -1,5 +1,6 @@
 import { handlerPost } from './handlerPost';
 import { refs } from './refs';
+import { toggleModal, toggleModalClick } from './toggleModal';
 
 refs.formModal.addEventListener('submit', handlerPost);
 refs.openModalBtn.addEventListener('click', toggleModal);
@@ -12,16 +13,3 @@ refs.spinnerModal.classList.add('is-hidden');
 // } else {
 //   document.body.style.overflow = 'hidden';
 // }
-
-export function toggleModalClick(evt) {
-  const backdropModal = evt.target.classList.contains('js-backdrop-order');
-  const parentBtnClose = evt.target.closest('.js-modal-close-btn');
-
-  if (backdropModal || parentBtnClose) {
-    toggleModal();
-  }
-}
-
-export function toggleModal() {
-  refs.modalOrder.classList.toggle('is-hidden-modal');
-}

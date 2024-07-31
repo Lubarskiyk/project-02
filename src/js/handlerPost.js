@@ -6,7 +6,7 @@ import {
   errorNotify,
   infoNotify,
 } from './footer.backdrop.styles';
-import { toggleModal } from './modal';
+import { toggleModal } from './toggleModal';
 
 export function handlerPost(evt) {
   evt.preventDefault();
