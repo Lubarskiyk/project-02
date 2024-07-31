@@ -12,9 +12,7 @@ export function toggleModalClick(evt) {
   const parentBtnClose = evt.target.closest('.js-modal-close-btn');
   const parentBtnSend = evt.target.closest('.js-spinner-wrap');
 
-  if (evt.target.classList.contains('js-backdrop-order')) {
-    toggleModal();
-  } else if (parentBtnSend) {
+  if (evt.target.classList.contains('js-backdrop-order') || parentBtnSend) {
     toggleModal();
   } else if (parentBtnClose) {
     toggleModal();
