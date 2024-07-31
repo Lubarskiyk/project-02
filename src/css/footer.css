@@ -10,7 +10,8 @@
   }
 }
 
-.footer {
+.footer,
+.modal-order-prj {
   background-image: url(../img/footer/bg-mob@1x.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -18,32 +19,37 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
-  .footer {
+  .footer,
+  .modal-order-prj {
     background-image: url(../img/footer/bg-mob@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
+  .footer,
+  .modal-order-prj {
     background-image: url(../img/footer/bg-tab@1x.png);
     background-size: 25.8% 100%;
   }
 
   @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
-    .footer {
+    .footer,
+    .modal-order-prj {
       background-image: url(../img/footer/bg-tab@2x.png);
     }
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .footer {
+  .footer,
+  .modal-order-prj {
     background-image: url(../img/footer/bg-desctop@1x.png);
     background-size: 26.8% 100%;
   }
 
   @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
-    .footer {
+    .footer,
+    .modal-order-prj {
       background-image: url(../img/footer/bg-desctop@2x.png);
     }
   }
