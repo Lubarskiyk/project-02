@@ -7,6 +7,7 @@ export const refs = {
   openmenu: document.querySelector('.js_menu_changecolor'),
   changecolor: document.querySelector('.change-theme'),
   form: document.querySelector('.js-footer-form'),
+
   spinner: document.querySelector('.js-loader-footer'),
   btnFooter: document.querySelector('.js-btn-footer'),
   formModal: document.querySelector('.js-modal-form'),
@@ -18,4 +19,6 @@ export const refs = {
   closeModalBtn: document.querySelector('[data-modal-close]'),
   // modalClose: document.querySelector('[data-btn-close]'),
   // formModalClose: document.querySelector('[data-form-close]'),
+
+  projSlideWrap: document.querySelector('.proj-swiper-wrap'),
 };

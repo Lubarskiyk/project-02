@@ -84,42 +84,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid currentColor;
+
+    border: 1px solid rgba(250, 250, 250, 0.2);
     transition: border-color var(--trns);
 }
 
-.reviews-swiper-button-left,
-.reviews-swiper-button-right {
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    transition: border var(--trns);
+.reviews-swiper-button:hover,
+.reviews-swiper-button:focus {
+    border-color: rgba(250, 250, 250, 0.5);
 }
 
-.reviews-swiper-button-left.swiper-button-disabled,
-.reviews-swiper-button-right.swiper-button-disabled {
-    border: 1px solid rgba(250, 250, 250, 0.2);
+.reviews-swiper-button.swiper-button-disabled {
     opacity: 0.35;
     cursor: auto;
     pointer-events: none;
 }
 
-.reviews-swiper-button-left .reviews-icon,
-.reviews-swiper-button-right .reviews-icon {
+.reviews-swiper-button .reviews-icon {
     width: 24px;
     height: 24px;
-    fill: currentColor;
+    fill: var(--main-text);
     transition: fill var(--trns);
 }
 
-.reviews-swiper-button-left.swiper-button-disabled .reviews-icon,
-.reviews-swiper-button-right.swiper-button-disabled .reviews-icon {
+.reviews-swiper-button.swiper-button-disabled .reviews-icon {
     fill: var(--arrow);
-}
-
-.reviews-swiper-button-left .reviews-icon:hover,
-.reviews-swiper-button-left .reviews-icon:focus,
-.reviews-swiper-button-right .reviews-icon:hover,
-.reviews-swiper-button-right .reviews-icon:focus {
-    fill: var(--main-text);
 }
 
 /* =========scroll-btn=========== */
@@ -186,8 +175,7 @@
         height: 68px;
     }
 
-    .reviews-swiper-button-left .reviews-icon,
-    .reviews-swiper-button-right .reviews-icon {
+    .reviews-swiper-button .reviews-icon {
         width: 32px;
         height: 32px;
     }

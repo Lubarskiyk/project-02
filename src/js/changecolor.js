@@ -1,12 +1,10 @@
 import colorTheme from '/data/themeColor.json';
 import { generatePictureTag } from './generatepicturetag.js';
 import { refs } from './refs.js';
-import { heroBackground } from './hero_background.js';
+// import { heroBackground } from './hero_background.js';
 import { setLocalData } from './localdata.js';
+import { heroBackground } from './imageobject.js';
 
-refs.changecolor.addEventListener('click', () => {
-  refs.openmenu.classList.toggle('isopen_changecolor');
-});
 const li_item = document.querySelectorAll('.theme_button');
 li_item.forEach((e, key) => {
   const theme = colorTheme.find(theme => theme.id === key + 1);
@@ -14,8 +12,24 @@ li_item.forEach((e, key) => {
   e.dataset.id = key + 1;
 });
 
-refs.openmenu.addEventListener('click', e => {
-  const id = parseInt(e.target.dataset.id);
+refs.changecolor.addEventListener('click', () => {
+  refs.openmenu.classList.toggle('isopen_changecolor');
+  refs.rootColor.addEventListener('click', handlerClick);
+});
+
+function handlerClick(e) {
+  if (e.target.classList.contains('theme_button')) {
+    themeChangeHandler(e);
+  } else {
+    if (!e.target.classList.contains('change-theme')) {
+      refs.openmenu.classList.remove('isopen_changecolor');
+      refs.rootColor.removeEventListener('click', handlerClick);
+    }
+  }
+}
+
+function themeChangeHandler(evt) {
+  const id = parseInt(evt.target.dataset.id);
   const theme = colorTheme.find(theme => theme.id === id);
   refs.heroBackground.innerHTML = generatePictureTag(
     heroBackground,
@@ -29,11 +43,11 @@ refs.openmenu.addEventListener('click', e => {
     theme.path_retina,
     'background_image'
   );
-  refs.rootColor.style.setProperty('--akcent-collor', `${theme.accent_color}`);
   changerColor(theme.accent_color, theme.aсcent_collor_hover);
-  refs.openmenu.classList.toggle('isopen_changecolor');
+  refs.openmenu.classList.remove('isopen_changecolor');
+  refs.rootColor.removeEventListener('click', handlerClick);
   setLocalData(id);
-});
+}
 
 export function changerColor(accentColor, accentColorHover) {
   refs.rootColor.style.setProperty('--akcent-collor', accentColor);
