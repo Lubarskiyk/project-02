@@ -54,15 +54,15 @@
 } */
 
 .open-burger:focus,
-.open-burger:hover{
-    color:var(--aсcent-collor-hover)
+.open-burger:hover {
+    color: var(--aсcent-collor-hover)
 }
 
 .burger-icon:hover,
 .burger-icon:focus {
     stroke: var(--aсcent-collor-hover);
 }
- 
+
 
 .two-btn-wrapper {
     font-family: 'Courier New', Courier, monospace;
@@ -90,8 +90,8 @@
     text-decoration: underline;
 }
 
-.custom-checkbox:checked~.custom-list .menu-list-item a:hover,
-.custom-checkbox:checked~.custom-list .menu-list-item a:focus{
+.custom-checkbox:checked ~ .custom-list .menu-list-item a:hover,
+.custom-checkbox:checked ~ .custom-list .menu-list-item a:focus {
     color: var(--aсcent-collor-hover);
 }
 
@@ -127,8 +127,8 @@
 }
 
 .change-theme:hover,
-.change-theme:focus{
- background-color: var(--aсcent-collor-hover);
+.change-theme:focus {
+    background-color: var(--aсcent-collor-hover);
 }
 
 
@@ -137,7 +137,7 @@
 }
 
 
-.custom-checkbox:checked~.custom-list {
+.custom-checkbox:checked ~ .custom-list {
     transform: translateX(-50%) scaleY(1);
     opacity: 1;
 
@@ -224,10 +224,10 @@
 
 .close-btn:hover .modal-close-btn,
 .close-btn:focus .modal-close-btn {
-    fill: var(--accent-color-hover);
+    fill: var(--aсcent-collor-hover);
 }
 
-close-btn.modal- {
+close-btn.modal {
 
 
     width: 28px;
@@ -242,21 +242,18 @@ close-btn.modal- {
     display: none;
 }
 
- .open-burger:hover,
- .open-burger:focus {
+.open-burger:hover,
+.open-burger:focus {
     fill: var(--aсcent-collor-hover);
- }
+}
 
 .change-theme {
     display: block;
     border-radius: 60px;
     background: var(--akcent-collor);
     border: none;
-    /* width: 90px;
-    height: 45px; */
     width: 60px;
     height: 35px;
-    /*  */
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -266,7 +263,7 @@ close-btn.modal- {
 }
 
 .change-theme:hover,
-.change-theme:focus{
+.change-theme:focus {
     background-color: var(--aсcent-collor-hover);
 }
 
@@ -291,17 +288,16 @@ close-btn.modal- {
 }
 
 .order-mobile:focus,
-.order-mobile:hover{
+.order-mobile:hover {
     background-color: var(--aсcent-collor-hover);
 }
 
-.modal-overlay.is-open .menu-list-item a:hover,
-.modal-overlay.is-open .menu-list-item a:focus,
-.modal-overlay.is-open .modal-text:hover,
-.modal-overlay.is-open .modal-text:focus {
+.modal-overlay.is-open > .menu-list-item a:hover,
+.modal-overlay.is-open > .menu-list-item a:focus,
+.modal-overlay.is-open > .modal-text:hover,
+.modal-overlay.is-open > .modal-text:focus {
     color: var(--aсcent-collor-hover);
 }
-
 
 
 @media screen and (min-width: 768px) {
@@ -323,10 +319,10 @@ close-btn.modal- {
         padding-top: 13px;
     }
 
-         .menu-button:focus,
-        .menu-button:hover {
-            color: var(--aсcent-collor-hover);
-        } 
+    .menu-button:focus,
+    .menu-button:hover {
+        color: var(--aсcent-collor-hover);
+    }
 
     .menu-list-item {
         padding-bottom: 7px;
@@ -351,10 +347,10 @@ close-btn.modal- {
         color: #fafafa;
     }
 
-        .order-btn:hover,
-        .order-btn:focus {
-            background-color: var(--aсcent-collor-hover);
-        }
+    .order-btn:hover,
+    .order-btn:focus {
+        background-color: var(--aсcent-collor-hover);
+    }
 
     .change-theme {
         width: 90px;
@@ -372,10 +368,10 @@ close-btn.modal- {
         gap: 14px;
     }
 
-        .order-btn:hover,
-        .order-btn:focus {
-            background-color: var(--aсcent-collor-hover);
-        }
+    .order-btn:hover,
+    .order-btn:focus {
+        background-color: var(--aсcent-collor-hover);
+    }
 
     .change-theme {
         /* width: 60px;
