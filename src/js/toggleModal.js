@@ -6,7 +6,6 @@ function toggleModalClick(evt) {
 
   if (backdropModal || parentBtnClose) {
     toggleModal();
-    handlerKey();
     document.removeEventListener('keydown', handlerKey);
   }
 }
@@ -21,6 +20,7 @@ function handlerKey(evt) {
   if (evt.code === 'Escape') {
     toggleModal();
   }
+  document.removeEventListener('keydown', handlerKey);
 }
 
 export { toggleModalClick, toggleModal };
