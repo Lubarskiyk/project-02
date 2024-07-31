@@ -1,8 +1,9 @@
 import colorTheme from '/data/themeColor.json';
 import { generatePictureTag } from './generatepicturetag.js';
 import { refs } from './refs.js';
-import { heroBackground } from './hero_background.js';
+// import { heroBackground } from './hero_background.js';
 import { setLocalData } from './localdata.js';
+import { heroBackground } from './imageobject.js';
 
 const li_item = document.querySelectorAll('.theme_button');
 li_item.forEach((e, key) => {
