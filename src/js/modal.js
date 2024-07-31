@@ -7,19 +7,24 @@ refs.modalOrder.addEventListener('click', toggleModalClick);
 
 refs.spinnerModal.classList.add('is-hidden');
 
+// if (refs.modalOrder.classList.contains('is-hidden-modal')) {
+//   document.body.style.overflow = 'scroll';
+// } else {
+//   document.body.style.overflow = 'hidden';
+// }
+
 export function toggleModalClick(evt) {
-  // document.body.style.overflow = 'hidden';
+  const backdropModal = evt.target.classList.contains('js-backdrop-order');
   const parentBtnClose = evt.target.closest('.js-modal-close-btn');
   const parentBtnSend = evt.target.closest('.js-spinner-wrap');
 
-  if (evt.target.classList.contains('js-backdrop-order') || parentBtnSend) {
+  if (backdropModal || parentBtnClose) {
     toggleModal();
-  } else if (parentBtnClose) {
+  } else if (parentBtnSend) {
     toggleModal();
   }
 }
 
 export function toggleModal() {
   refs.modalOrder.classList.toggle('is-hidden-modal');
-  document.body.style.overflow = 'auto';
 }

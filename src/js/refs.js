@@ -17,8 +17,7 @@ export const refs = {
   modalOrder: document.querySelector('[data-modal]'),
   openModalBtn: document.querySelector('[data-modal-open]'),
   closeModalBtn: document.querySelector('[data-modal-close]'),
-  // modalClose: document.querySelector('[data-btn-close]'),
-  // formModalClose: document.querySelector('[data-form-close]'),
+  // formModalClose: document.querySelector('[data-btn-close]'),
 
   projSlideWrap: document.querySelector('.proj-swiper-wrap'),
 };

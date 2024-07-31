@@ -6,7 +6,6 @@ import {
   errorNotify,
   infoNotify,
 } from './footer.backdrop.styles';
-// import { toggleModalClick } from './modal';
 
 export function handlerPost(evt) {
   evt.preventDefault();
@@ -24,8 +23,6 @@ export function handlerPost(evt) {
 
   makePost({ email: emailValue, comment: commentValue })
     .then(() => {
-      // toggleModalClick();
-
       infoNotify();
       addInlineInfoNotifyStyle();
 
