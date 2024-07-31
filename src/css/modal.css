@@ -8,6 +8,14 @@
   z-index: 999;
 }
 
+.backdrop-order-prj.is-hidden-modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms var(--cubic-regular) 350ms, visibility 250ms var(--cubic-regular) 350ms;
+}
+
 .modal-order-prj {
   position: absolute;
   top: 50%;
@@ -23,6 +31,10 @@
   border-radius: 20px;
 
   overflow-y: auto;
+}
+
+.backdrop.is-hidden > .modal-order-prj {
+  transform: translate(-50%, -200%);
 }
 
 .modal-btn {

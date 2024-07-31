@@ -1,8 +1,8 @@
-<div class="backdrop-order-prj is-hidden">
+<div class="backdrop-order-prj js-backdrop-order" data-modal>
   <div class="modal-order-prj">
     <button
       aria-label="Close Order"
-      class="modal-btn close-mob-modal"
+      class="modal-btn close-mob-modal js-modal-close-btn"
       type="button"
       data-modal-close
     >
@@ -36,12 +36,12 @@
           type="email"
           name="emailContact"
           class="contacts-form-inp input"
-          id="email"
+          id="emailModal"
           autocomplete="on"
           required
           placeholder=" "
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        /><label for="email" class="contacts-form-label"> clients@gmail.com</label>
+        /><label for="emailModal" class="contacts-form-label"> clients@gmail.com</label>
         <span class="valid-notify">Succes!</span>
         <span class="invalid-notify">Invalid email, try again</span>
       </div>
@@ -50,16 +50,16 @@
         <input
           type="text"
           name="comment"
-          id="Comment"
+          id="CommentModal"
           class="contacts-form-inp contacts-form-textarea"
           placeholder="Text us"
           required
         />
-        <label for="Comment" class="contacts-form-label textarea">comments</label>
+        <label for="CommentModal" class="contacts-form-label textarea">comments</label>
       </div>
 
-      <div class="spinner-wrap">
-        <button class="contacts-form-btn js-btn-modal" type="submit">Send</button>
+      <div class="spinner-wrap js-spinner-wrap">
+        <button data-btn-close class="contacts-form-btn js-btn-modal" type="submit">Send</button>
         <div class="loader js-loader-modal"></div>
       </div>
     </form>

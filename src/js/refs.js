@@ -12,4 +12,10 @@ export const refs = {
   formModal: document.querySelector('.js-modal-form'),
   spinnerModal: document.querySelector('.js-loader-modal'),
   btnFooterModal: document.querySelector('.js-btn-modal'),
+
+  modalOrder: document.querySelector('[data-modal]'),
+  openModalBtn: document.querySelector('[data-modal-open]'),
+  closeModalBtn: document.querySelector('[data-modal-close]'),
+  // modalClose: document.querySelector('[data-btn-close]'),
+  // formModalClose: document.querySelector('[data-form-close]'),
 };
