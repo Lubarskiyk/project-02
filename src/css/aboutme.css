@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: color var(--trns);
 }
 
 .ac-panel {
@@ -85,6 +86,11 @@
 
 .ac-trigger:hover .svg-wrap, .ac-trigger:focus .svg-wrap {
     border-color: var(--main-text);
+}
+
+.ac-trigger:hover,
+.ac-trigger:focus {
+color: var(--main-text);
 }
 
 .icon {
