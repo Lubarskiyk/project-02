@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { refs } from './refs';
 
 import caution from '../img/footer/bi_exclamation-triangle.png';
 import iconOctagon from '../img/footer/bi_x-octagon.png';
@@ -29,10 +30,10 @@ function infoNotify() {
     zindex: '222',
 
     onOpening: function () {
-      document.body.style.overflow = 'hidden';
+      refs.body.classList.add('is-lock');
     },
     onClosing: function () {
-      document.body.style.overflow = 'auto';
+      refs.body.classList.remove('is-lock');
     },
   });
 }
