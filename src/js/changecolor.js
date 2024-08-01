@@ -14,6 +14,13 @@ li_item.forEach((e, key) => {
 
 refs.changecolor.addEventListener('click', () => {
   refs.openmenu.classList.toggle('isopen_changecolor');
+  li_item.forEach((el, key) => {
+    if (el.getAttribute('tabindex') === '-1') {
+      el.setAttribute('tabindex', '0');
+    } else {
+      el.setAttribute('tabindex', '-1');
+    }
+  });
   refs.rootColor.addEventListener('click', handlerClick);
 });
 
@@ -22,6 +29,9 @@ function handlerClick(e) {
     themeChangeHandler(e);
   } else {
     if (!e.target.classList.contains('change-theme')) {
+      li_item.forEach((el, key) => {
+        el.setAttribute('tabindex', '-1');
+      });
       refs.openmenu.classList.remove('isopen_changecolor');
       refs.rootColor.removeEventListener('click', handlerClick);
     }
@@ -44,6 +54,9 @@ function themeChangeHandler(evt) {
     'background_image'
   );
   changerColor(theme.accent_color, theme.aсcent_collor_hover);
+  li_item.forEach((el, key) => {
+    el.setAttribute('tabindex', '-1');
+  });
   refs.openmenu.classList.remove('isopen_changecolor');
   refs.rootColor.removeEventListener('click', handlerClick);
   setLocalData(id);
