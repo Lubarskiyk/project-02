@@ -75,18 +75,6 @@ function NavMenu(evt) {
   }
 }
 
-// ClOSE MENU after click
-document.addEventListener('DOMContentLoaded', function () {
-  const menuItems = document.querySelectorAll('.custom-list .menu-list-item a');
-  const checkbox = document.getElementById('menu-toggle');
-
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      checkbox.checked = false;
-    });
-  });
-});
-
 // MENU
 navMenu.addEventListener('click', toggleMenu);
 

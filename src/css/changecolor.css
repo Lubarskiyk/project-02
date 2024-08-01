@@ -73,7 +73,6 @@
 
 .isopen_changecolor > .menu-item > .theme_button:focus {
     box-shadow: 0 0 0 2px var(--aсcent-collor-hover);
-    tab-index: 0;
 }
 
 .isopen_changecolor > .menu-item {
