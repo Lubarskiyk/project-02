@@ -6,21 +6,21 @@ function toggleModalClick(evt) {
 
   if (backdropModal || parentBtnClose) {
     toggleModal();
-    document.removeEventListener('keydown', handlerKey);
+    window.removeEventListener('keydown', handlerKey);
   }
 }
 
 function toggleModal() {
-  document.addEventListener('keydown', handlerKey);
   refs.modalOrder.classList.toggle('is-hidden-modal');
+  window.addEventListener('keydown', handlerKey);
   refs.body.classList.toggle('is-lock');
 }
 
 function handlerKey(evt) {
   if (evt.code === 'Escape') {
     toggleModal();
+    window.removeEventListener('keydown', handlerKey);
   }
-  document.removeEventListener('keydown', handlerKey);
 }
 
-export { toggleModalClick, toggleModal };
+export { toggleModalClick, toggleModal, handlerKey };
