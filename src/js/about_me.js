@@ -33,14 +33,22 @@ const swiper = new Swiper('.about-me-swiper', {
     },
   },
   centeredSlidesBounds: true,
-  speed: 0,
+  speed: 400,
 });
+
+
+
+
+const moveSlideToEnd = () => {
+  if (window.innerWidth >= 1440) {
+    setTimeout(() => {
+      const activeSlide = swiper.slides[swiper.activeIndex];
+      swiper.wrapperEl.appendChild(activeSlide); 
+      swiper.update(); 
+    }, 400); 
+  }
+};
+
 
 const nextButton = document.querySelector('.swiper-button-wrap .aboutme-swiper-btn');
-
-nextButton.addEventListener('click', () => {
-  if (window.innerWidth >= 1440) {
-    swiper.slides[swiper.activeIndex].parentNode.appendChild(swiper.slides[swiper.activeIndex]);
-    swiper.update();
-  }
-});
+nextButton.addEventListener('click', moveSlideToEnd);
