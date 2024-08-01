@@ -27,6 +27,13 @@ function infoNotify() {
     overlayColor: 'rgba(15, 15, 16, 0.6)',
     overlayClose: true,
     zindex: '222',
+
+    onOpening: function () {
+      document.body.style.overflow = 'hidden';
+    },
+    onClosing: function () {
+      document.body.style.overflow = 'auto';
+    },
   });
 }
 
