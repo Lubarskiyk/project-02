@@ -26,6 +26,11 @@
     color: var(--main-text);
 }
 
+.image-wrapper:hover > .logo-text, .image-wrapper:focus > .logo-text {
+    color: var(--aсcent-collor-hover);
+}
+
+
 .navigation-header {
     font-family: 'Inter Tight', sans-serif;
     font-weight: var(--font-weight);
@@ -49,9 +54,6 @@
     align-items: flex-start;
 }
 
-/* .open-burger{
-    fill: var(--main-text);
-} */
 
 .open-burger:focus,
 .open-burger:hover {
@@ -70,83 +72,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-/*  */
-/* .nav-menu {
-    display: none;
-}
-
-.menu-button {
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #fafafa;
-    background: none;
-    border: none;
-    padding: 0;
-    text-decoration: underline;
-}
-
-.custom-checkbox:checked ~ .custom-list .menu-list-item a:hover,
-.custom-checkbox:checked ~ .custom-list .menu-list-item a:focus {
-    color: var(--aсcent-collor-hover);
-}
-
-
-.custom-list {
-    list-style: none;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) scaleY(0);
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    z-index: 1000;
-    text-align: center;
-    width: max-content;
-}
-
-.menu-list-item {
-    padding: 5px;
-}
-
-.menu-list-item a {
-    text-decoration: none;
-    color: var(--main-text);
-}
-
-.change-theme:hover,
-.change-theme:focus {
-    background-color: var(--aсcent-collor-hover);
-}
-
-
-.custom-checkbox {
-    display: none;
-}
-
-
-.custom-checkbox:checked ~ .custom-list {
-    transform: translateX(-50%) scaleY(1);
-    opacity: 1;
-
-} */
 
 .nav-menu {
-    /* position: relative;
-        display: inline-block;
-        width: max-content;
-        margin: 0 auto;
-        padding-top: 13px;
-        cursor: pointer; */
     display: none;
 }
 
