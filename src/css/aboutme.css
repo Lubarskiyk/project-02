@@ -159,7 +159,7 @@
 .aboutme-skills-item.swiper-slide {
   width: 104px;
   height: 104px;
-  border: 1px solid var(--arrow);
+  border: 1px solid var(--color-border-interact);
   display: flex;
   justify-content: center;
   align-items: center;
