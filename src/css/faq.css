@@ -12,7 +12,7 @@
   font-size: 16px;
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
-  color: rgba(250, 250, 250, 0.4);
+  color: var(--color-text-title);
   text-transform: uppercase;
   margin-bottom: var(--mb-small);
 }

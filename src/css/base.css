@@ -9,6 +9,9 @@
   --success-color: #3cbc81;
   --invalid-color: #e74a3b;
   --form-color: rgba(250, 250, 250, 0.6);
+  --color-text-title: rgba(250, 250, 250, 0.4);
+  --color-border-interact: rgba(250, 250, 250, 0.2);
+
   /* mb sections  */
   --mb-small: 32px;
   --mb-medium: 64px;
