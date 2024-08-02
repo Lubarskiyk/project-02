@@ -33,22 +33,14 @@ const swiper = new Swiper('.about-me-swiper', {
     },
   },
   centeredSlidesBounds: true,
-  speed: 400,
+  speed: 0,
 });
-
-
-
-
 const moveSlideToEnd = () => {
   if (window.innerWidth >= 1440) {
-    setTimeout(() => {
-      const activeSlide = swiper.slides[swiper.activeIndex];
-      swiper.wrapperEl.appendChild(activeSlide); 
-      swiper.update(); 
-    }, 400); 
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    swiper.wrapperEl.appendChild(activeSlide);
+    swiper.update();
   }
 };
-
-
 const nextButton = document.querySelector('.swiper-button-wrap .aboutme-swiper-btn');
 nextButton.addEventListener('click', moveSlideToEnd);
