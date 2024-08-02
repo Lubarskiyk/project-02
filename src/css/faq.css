@@ -12,7 +12,7 @@
   font-size: 16px;
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
-  color: rgba(250, 250, 250, 0.4);
+  color: var(--color-text-title);
   text-transform: uppercase;
   margin-bottom: var(--mb-small);
 }
@@ -22,11 +22,11 @@
   border: none;
   margin: 0;
   padding-top: 20px;
-  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-top: 1px solid var(--color-border-interact);
 }
 
 .accordion-container-faq .ac-faq:last-child {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid var(--color-border-interact);
 }
 
 .ac-faq .ac-header .ac-trigger {
@@ -69,7 +69,7 @@
   justify-content: center;
   display: block;
   flex-direction: row;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--color-border-interact);
   border-radius: 100px;
   padding: 7px;
   width: 34px;
