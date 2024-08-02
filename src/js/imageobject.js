@@ -15,3 +15,9 @@ export const projectImage = import.meta.glob('/img/projects/*.png', {
   import: 'default',
   eager: true,
 });
+
+export const footerImage = import.meta.glob('/img/footer/logo/*.png', {
+  query: { format: 'avif;webp;png', as: 'picture' },
+  import: 'default',
+  eager: true,
+});

@@ -96,6 +96,13 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-logo-photo img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 .footer-contacts-form {
   margin-bottom: var(--pb-medium);
   display: flex;
