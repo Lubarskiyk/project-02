@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { refs } from './refs';
 
 import caution from '../img/footer/bi_exclamation-triangle.png';
 import iconOctagon from '../img/footer/bi_x-octagon.png';
@@ -27,6 +28,13 @@ function infoNotify() {
     overlayColor: 'rgba(15, 15, 16, 0.6)',
     overlayClose: true,
     zindex: '222',
+
+    onOpening: function () {
+      refs.body.classList.add('is-lock');
+    },
+    onClosing: function () {
+      refs.body.classList.remove('is-lock');
+    },
   });
 }
 
