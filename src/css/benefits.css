@@ -88,7 +88,8 @@
 }
 
 .benefits-link:hover,
-.benefits-link:active {
+.benefits-link:active,
+.benefits-link:focus {
   border-color: var(--main-text);
 }
 
