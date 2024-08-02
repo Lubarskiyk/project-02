@@ -4,14 +4,14 @@
     "path": "/img/background_hero/hero_red_1x.png",
     "path_retina": "/img/background_hero/hero_red_2x.png",
     "accent_color": "#ED3B44",
-    "aсcent_collor_hover": "#e0373f"
+    "aсcent_collor_hover": "#e037409e"
   },
   {
     "id": 2,
     "path": "/img/background_hero/hero_green_1x.png",
     "path_retina": "/img/background_hero/hero_green_2x.png",
     "accent_color": "#C6E327",
-    "aсcent_collor_hover": "#d0e84a"
+    "aсcent_collor_hover": "#d0e84ab4"
   },
   {
     "id": 3,
