@@ -7,6 +7,7 @@ import {
   infoNotify,
 } from './footer.backdrop.styles';
 import { handlerKey, toggleModal } from './toggleModal';
+import { inputNtfstatic } from './footer';
 
 export function handlerPost(evt) {
   evt.preventDefault();
@@ -31,6 +32,7 @@ export function handlerPost(evt) {
 
       infoNotify();
       addInlineInfoNotifyStyle();
+      inputNtfstatic();
 
       evt.target.reset();
     })

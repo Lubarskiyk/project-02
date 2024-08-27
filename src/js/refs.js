@@ -9,6 +9,9 @@ export const refs = {
   changecolor: document.querySelector('.change-theme'),
   form: document.querySelector('.js-footer-form'),
 
+  inputNtf: document.querySelector('.js-contact-inp'),
+  validNtf: document.querySelector('.js-valid-notify'),
+  invalidNtf: document.querySelector('.js-invalid-notify'),
   spinner: document.querySelector('.js-loader-footer'),
   btnFooter: document.querySelector('.js-btn-footer'),
   formModal: document.querySelector('.js-modal-form'),
