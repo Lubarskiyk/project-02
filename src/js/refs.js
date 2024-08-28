@@ -10,8 +10,11 @@ export const refs = {
   form: document.querySelector('.js-footer-form'),
 
   inputNtf: document.querySelector('.js-contact-inp'),
+  inputNtfModal: document.querySelector('.js-contact-inp-modal'),
   validNtf: document.querySelector('.js-valid-notify'),
   invalidNtf: document.querySelector('.js-invalid-notify'),
+  validNtfModal: document.querySelector('.js-valid-notify-modal'),
+  invalidNtfModal: document.querySelector('.js-invalid-notify-modal'),
   spinner: document.querySelector('.js-loader-footer'),
   btnFooter: document.querySelector('.js-btn-footer'),
   formModal: document.querySelector('.js-modal-form'),
