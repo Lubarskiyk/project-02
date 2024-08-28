@@ -7,7 +7,7 @@ import {
   infoNotify,
 } from './footer.backdrop.styles';
 import { handlerKey, toggleModal } from './toggleModal';
-import { inputNtfstatic } from './footer';
+import { inputNtfstatic } from './inputNtfappearance';
 
 export function handlerPost(evt) {
   evt.preventDefault();
