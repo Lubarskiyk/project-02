@@ -2,7 +2,7 @@ export const refs = {
   heroBackground: document.querySelector('.js_image'),
   modalBackground: document.querySelector('.js_image_modal'),
   developerFoto: document.querySelector('.js-dev-foto'),
-  footerImage: document.querySelector('.js-footer-logo'),
+  footerImage: document.querySelectorAll('.js-footer-logo'),
   accordionContainer: document.querySelector('.js-accordion-container'),
   rootColor: document.documentElement,
   openmenu: document.querySelector('.js_menu_changecolor'),
