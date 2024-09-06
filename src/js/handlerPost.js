@@ -16,6 +16,8 @@ export function handlerPost(evt) {
   const emailValue = emailContact.value.trim();
   const commentValue = comment.value.trim();
 
+  const isModalForm = evt.target.classList.contains('js-modal-form');
+
   if (!commentValue) {
     emptyNofify();
     return;
@@ -32,8 +34,12 @@ export function handlerPost(evt) {
 
       infoNotify();
       addInlineInfoNotifyStyle();
-      resetFooterNotify();
-      resetModalNotify();
+
+      if (isModalForm) {
+        resetModalNotify();
+      } else {
+        resetFooterNotify();
+      }
 
       evt.target.reset();
     })
