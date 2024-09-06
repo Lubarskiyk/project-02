@@ -1,5 +1,5 @@
 import { handlerPost } from './handlerPost';
-import { inputNtfappearance, inputNtfstatic } from './inputNtfappearance';
+import { checkModalInput, resetModalNotify } from './inputNtfappearance';
 import { refs } from './refs';
 import { toggleModal, toggleModalClick } from './toggleModal';
 
@@ -8,5 +8,5 @@ refs.openModalBtn.addEventListener('click', toggleModal);
 refs.modalOrder.addEventListener('click', toggleModalClick);
 
 refs.spinnerModal.classList.add('is-hidden');
-refs.inputNtfModal.addEventListener('blur', inputNtfappearance);
-refs.inputNtfModal.addEventListener('focus', inputNtfstatic);
+refs.inputNtfModal.addEventListener('blur', checkModalInput);
+refs.inputNtfModal.addEventListener('focus', resetModalNotify);
