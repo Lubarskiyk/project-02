@@ -87,7 +87,7 @@
 }
 
 .modal-btn:active {
-  background-color: #e03740a4;
+  background-color: var(--akcent-collor);
 }
 
 .modal-icon {

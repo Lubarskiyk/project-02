@@ -4,14 +4,16 @@ import { refs } from './refs.js';
 import footerLogoPhoto from '/data/footerLogoPhoto.json';
 
 export function renderFooterLogo() {
-  refs.footerImage.insertAdjacentHTML(
-    'beforeend',
-    generatePictureTag(
-      footerImage,
-      footerLogoPhoto[0].path,
-      footerLogoPhoto[0].path_retina,
-      'footer-logo-photo',
-      'Foto Developer'
-    )
-  );
+  refs.footerImage.forEach(el => {
+    el.insertAdjacentHTML(
+      'beforeend',
+      generatePictureTag(
+        footerImage,
+        footerLogoPhoto[0].path,
+        footerLogoPhoto[0].path_retina,
+        'footer-logo-photo',
+        'Foto Developer'
+      )
+    );
+  });
 }

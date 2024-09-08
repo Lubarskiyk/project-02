@@ -12,21 +12,7 @@
     </button>
 
     <h2 class="footer-title">
-      <picture>
-        <source
-          srcset="./img/footer/logo@1x.webp 1x, ./img/footer/logo@2x.webp 2x"
-          media="(min-width: 1440px)" />
-        <source
-          srcset="./img/footer/logo@1x.webp 1x, ./img/footer/logo@2x.webp 2x"
-          media="(min-width: 768px)" />
-        <source
-          srcset="./img/footer/mob-logo@1x.webp 1x, ./img/footer/mob-logo@2x.webp 2x"
-          media="(min-width: 375px)" />
-        <source
-          srcset="./img/footer/mob-logo@1x.webp 1x, ./img/footer/mob-logo@2x.webp 2x"
-          media="(max-width: 375px)" />
-        <img loading="lazy" src="./img/footer/mob-logo@1x.webp" alt="logo"
-      /></picture>
+      <span class="js-footer-logo"></span>
       Let’s <span class="footer-accent-text">work</span>together
     </h2>
 
@@ -51,11 +37,13 @@
           type="text"
           name="comment"
           id="CommentModal"
-          class="contacts-form-inp contacts-form-textarea"
+          class="contacts-form-inp contacts-form-textarea js-contact-inp-modal"
           placeholder="Text us"
           required
         />
         <label for="CommentModal" class="contacts-form-label textarea">comments</label>
+        <span class="valid-notify js-valid-notify-modal"></span>
+        <span class="invalid-notify js-invalid-notify-modal"></span>
       </div>
 
       <div class="spinner-wrap js-spinner-wrap">

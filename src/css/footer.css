@@ -1,3 +1,13 @@
+input[type='email']:-webkit-autofill,
+input[type='email']:-webkit-autofill:hover,
+input[type='email']:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--main-text);
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0 1000px transparent inset;
+
+  transition: background-color 7000s var(--cubic);
+}
+
 .footer {
   padding-top: var(--pb-small);
   padding-bottom: var(--pb-small);
@@ -274,14 +284,12 @@
   border-color: rgba(250, 250, 250, 0.5);
 }
 
-.contacts-form-inp::selection {
-  background-color: transparent;
-}
-
-.contacts-form-inp.input:not(:focus):not(:placeholder-shown):valid {
+.contacts-form-inp.input:not(:focus):not(:placeholder-shown):valid,
+.contacts-form-field > .js-contacts-input-valid {
   border-color: var(--success-color);
 }
-.contacts-form-inp.input:not(:focus):not(:placeholder-shown):invalid {
+.contacts-form-inp.input:not(:focus):not(:placeholder-shown):invalid,
+.contacts-form-field > .js-contacts-input-invalid {
   border-color: var(--invalid-color);
 }
 
@@ -308,7 +316,8 @@
 .contacts-form-inp.input:not(:focus):not(:placeholder-shown):invalid
   + .contacts-form-label
   + .valid-notify
-  + .invalid-notify {
+  + .invalid-notify,
+.notify-appearance {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
